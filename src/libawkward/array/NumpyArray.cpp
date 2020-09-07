@@ -211,7 +211,7 @@ namespace awkward {
   int64_t
   NumpyForm::fieldindex(const std::string& key) const {
     throw std::invalid_argument(
-      std::string("key ") + util::quote(key, true)
+      std::string("key ") + util::quote(key)
       + std::string(" does not exist (data are not records)")
       + FILENAME(__LINE__));
   }
@@ -263,7 +263,7 @@ namespace awkward {
   const FormPtr
   NumpyForm::getitem_field(const std::string& key) const {
     throw std::invalid_argument(
-      std::string("key ") + util::quote(key, true)
+      std::string("key ") + util::quote(key)
       + std::string(" does not exist (data are not records)"));
   }
 
@@ -631,7 +631,7 @@ namespace awkward {
                             const std::string& post) const {
     std::stringstream out;
     out << indent << pre << "<" << classname() << " format="
-        << util::quote(format_, true) << " shape=\"";
+        << util::quote(format_) << " shape=\"";
     for (std::size_t i = 0;  i < shape_.size();  i++) {
       if (i != 0) {
         out << " ";
@@ -1257,7 +1257,7 @@ namespace awkward {
   int64_t
   NumpyArray::fieldindex(const std::string& key) const {
     throw std::invalid_argument(
-      std::string("key ") + util::quote(key, true)
+      std::string("key ") + util::quote(key)
       + std::string(" does not exist (data are not records)")
       + FILENAME(__LINE__));
   }
