@@ -2331,31 +2331,121 @@ awkward_NumpyArray_fill_tocomplex64_fromcomplex64(std::complex<float> * toptr,
 
 ERROR
 awkward_NumpyArray_fill_tocomplex128_fromcomplex64(std::complex<double> * toptr,
-                                                 int64_t tooffset,
-                                                 const std::complex<float> * fromptr,
-                                                 int64_t length) {
+                                                  int64_t tooffset,
+                                                  const std::complex<float> * fromptr,
+                                                  int64_t length) {
   return awkward_NumpyArray_fill<std::complex<float>, std::complex<double> >(
       toptr, tooffset, fromptr, length);
 }
+
+ERROR
+awkward_NumpyArray_fill_toint8_fromcomplex128(uint8_t* toptr,
+                                              int64_t tooffset,
+                                              const std::complex<double>* fromptr,
+                                              int64_t length) {
+  // This fails with explicit template parameters
+  return awkward_NumpyArray_fill(toptr, tooffset, fromptr, length);
+}
+
+
+ERROR
+awkward_NumpyArray_fill_toint16_fromcomplex128(uint16_t* toptr,
+                                              int64_t tooffset,
+                                              const std::complex<double>* fromptr,
+                                              int64_t length) {
+  // This fails with explicit template parameters
+  return awkward_NumpyArray_fill(toptr, tooffset, fromptr, length);
+}
+
+
+ERROR
+awkward_NumpyArray_fill_toint32_fromcomplex128(uint32_t* toptr,
+                                               int64_t tooffset,
+                                               const std::complex<double>* fromptr,
+                                               int64_t length) {
+  // This fails with explicit template parameters
+  return awkward_NumpyArray_fill(toptr, tooffset, fromptr, length);
+}
+
+
+ERROR
+awkward_NumpyArray_fill_toint64_fromcomplex128(uint64_t* toptr,
+                                               int64_t tooffset,
+                                               const std::complex<double>* fromptr,
+                                               int64_t length) {
+  // This fails with explicit template parameters
+  return awkward_NumpyArray_fill(toptr, tooffset, fromptr, length);
+}
+
+
+ERROR
+awkward_NumpyArray_fill_touint8_fromcomplex128(uint8_t* toptr,
+                                               int64_t tooffset,
+                                               const std::complex<double>* fromptr,
+                                               int64_t length) {
+  // This fails with explicit template parameters
+  return awkward_NumpyArray_fill(toptr, tooffset, fromptr, length);
+}
+
+
+ERROR
+awkward_NumpyArray_fill_touint16_fromcomplex128(uint16_t* toptr,
+                                                int64_t tooffset,
+                                                const std::complex<double>* fromptr,
+                                                int64_t length) {
+  // This fails with explicit template parameters
+  return awkward_NumpyArray_fill(toptr, tooffset, fromptr, length);
+}
+
+
+ERROR
+awkward_NumpyArray_fill_touint32_fromcomplex128(uint32_t* toptr,
+                                                int64_t tooffset,
+                                                const std::complex<double>* fromptr,
+                                                int64_t length) {
+  // This fails with explicit template parameters
+  return awkward_NumpyArray_fill(toptr, tooffset, fromptr, length);
+}
+
+
+ERROR
+awkward_NumpyArray_fill_touint64_fromcomplex128(uint64_t* toptr,
+                                                int64_t tooffset,
+                                                const std::complex<double>* fromptr,
+                                                int64_t length) {
+  // This fails with explicit template parameters
+  return awkward_NumpyArray_fill(toptr, tooffset, fromptr, length);
+}
+
+
+ERROR
+awkward_NumpyArray_fill_tofloat32_fromcomplex128(float* toptr,
+                                                 int64_t tooffset,
+                                                 const std::complex<double>* fromptr,
+                                                 int64_t length) {
+  // This fails with explicit template parameters
+  return awkward_NumpyArray_fill(toptr, tooffset, fromptr, length);
+}
+
 
 ERROR
 awkward_NumpyArray_fill_tofloat64_fromcomplex128(double* toptr,
                                                  int64_t tooffset,
                                                  const std::complex<double>* fromptr,
                                                  int64_t length) {
-  // This fails with explicit <std::complex<double>, double>
-  // template parameters
+  // This fails with explicit template parameters
   return awkward_NumpyArray_fill(toptr, tooffset, fromptr, length);
 }
+
 
 ERROR
 awkward_NumpyArray_fill_tocomplex64_fromcomplex128(std::complex<float> * toptr,
                                                    int64_t tooffset,
                                                    const std::complex<double> * fromptr,
                                                    int64_t length) {
-  return awkward_NumpyArray_fill<std::complex<double>, std::complex<float> >(
-      toptr, tooffset, fromptr, length);
+  return awkward_NumpyArray_fill(toptr, tooffset, fromptr, length);
 }
+
 
 ERROR
 awkward_NumpyArray_fill_tocomplex128_fromcomplex128(std::complex<double> * toptr,

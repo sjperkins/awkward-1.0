@@ -2112,6 +2112,10 @@ extern "C" {
       int64_t tooffset,
       const std::complex<float>* fromptr,
       int64_t length);
+  /// @param toptr outparam
+  /// @param tooffset inparam role: IndexedArray-index-offset
+  /// @param fromptr inparam role: NumpyArray-ptr
+  /// @param length inparam
   EXPORT_SYMBOL struct Error
   awkward_NumpyArray_fill_tocomplex64_fromcomplex64(
     std::complex<float> * toptr,
@@ -2126,7 +2130,7 @@ extern "C" {
   awkward_NumpyArray_fill_tocomplex128_fromcomplex64(
     std::complex<double> * toptr,
     int64_t tooffset,
-      const std::complex<float>* fromptr,
+    const std::complex<float>* fromptr,
     int64_t length);
   /// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
