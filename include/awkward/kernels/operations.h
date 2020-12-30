@@ -576,242 +576,242 @@ extern "C" {
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_tobool_frombool(
-      bool* toptr,
-      int64_t tooffset,
-      const bool* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_tobool_frombool(
+    bool * toptr,
+    int64_t tooffset,
+    const bool * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_toint8_frombool(
-      int8_t* toptr,
-      int64_t tooffset,
-      const bool* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_toint8_frombool(
+    int8_t * toptr,
+    int64_t tooffset,
+    const bool * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_toint16_frombool(
-      int16_t* toptr,
-      int64_t tooffset,
-      const bool* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_toint16_frombool(
+    int16_t * toptr,
+    int64_t tooffset,
+    const bool * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_toint32_frombool(
-      int32_t* toptr,
-      int64_t tooffset,
-      const bool* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_toint32_frombool(
+    int32_t * toptr,
+    int64_t tooffset,
+    const bool * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_toint64_frombool(
-      int64_t* toptr,
-      int64_t tooffset,
-      const bool* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_toint64_frombool(
+    int64_t * toptr,
+    int64_t tooffset,
+    const bool * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_touint8_frombool(
-      uint8_t* toptr,
-      int64_t tooffset,
-      const bool* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_touint8_frombool(
+    uint8_t * toptr,
+    int64_t tooffset,
+    const bool * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_touint16_frombool(
-      uint16_t* toptr,
-      int64_t tooffset,
-      const bool* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_touint16_frombool(
+    uint16_t * toptr,
+    int64_t tooffset,
+    const bool * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_touint32_frombool(
-      uint32_t* toptr,
-      int64_t tooffset,
-      const bool* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_touint32_frombool(
+    uint32_t * toptr,
+    int64_t tooffset,
+    const bool * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_touint64_frombool(
-      uint64_t* toptr,
-      int64_t tooffset,
-      const bool* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_touint64_frombool(
+    uint64_t * toptr,
+    int64_t tooffset,
+    const bool * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_tofloat32_frombool(
-      float* toptr,
-      int64_t tooffset,
-      const bool* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_tofloat32_frombool(
+    float * toptr,
+    int64_t tooffset,
+    const bool * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_tofloat64_frombool(
-      double* toptr,
-      int64_t tooffset,
-      const bool* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_tofloat64_frombool(
+    double * toptr,
+    int64_t tooffset,
+    const bool * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_tocomplex64_frombool(
-      std::complex<float> * toptr,
-      int64_t tooffset,
-      const bool* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_tocomplex64_frombool(
+    std::complex<float> * toptr,
+    int64_t tooffset,
+    const bool * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_tocomplex128_frombool(
-      std::complex<double> * toptr,
-      int64_t tooffset,
-      const bool* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_tocomplex128_frombool(
+    std::complex<double> * toptr,
+    int64_t tooffset,
+    const bool * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_tobool_fromint8(
-      bool* toptr,
-      int64_t tooffset,
-      const int8_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_tobool_fromint8(
+    bool * toptr,
+    int64_t tooffset,
+    const int8_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_toint8_fromint8(
-      int8_t* toptr,
-      int64_t tooffset,
-      const int8_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_toint8_fromint8(
+    int8_t * toptr,
+    int64_t tooffset,
+    const int8_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_toint16_fromint8(
-      int16_t* toptr,
-      int64_t tooffset,
-      const int8_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_toint16_fromint8(
+    int16_t * toptr,
+    int64_t tooffset,
+    const int8_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_toint32_fromint8(
-      int32_t* toptr,
-      int64_t tooffset,
-      const int8_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_toint32_fromint8(
+    int32_t * toptr,
+    int64_t tooffset,
+    const int8_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_toint64_fromint8(
-      int64_t* toptr,
-      int64_t tooffset,
-      const int8_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_toint64_fromint8(
+    int64_t * toptr,
+    int64_t tooffset,
+    const int8_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_touint8_fromint8(
-      uint8_t* toptr,
-      int64_t tooffset,
-      const int8_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_touint8_fromint8(
+    uint8_t * toptr,
+    int64_t tooffset,
+    const int8_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_touint16_fromint8(
-      uint16_t* toptr,
-      int64_t tooffset,
-      const int8_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_touint16_fromint8(
+    uint16_t * toptr,
+    int64_t tooffset,
+    const int8_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_touint32_fromint8(
-      uint32_t* toptr,
-      int64_t tooffset,
-      const int8_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_touint32_fromint8(
+    uint32_t * toptr,
+    int64_t tooffset,
+    const int8_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_touint64_fromint8(
-      uint64_t* toptr,
-      int64_t tooffset,
-      const int8_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_touint64_fromint8(
+    uint64_t * toptr,
+    int64_t tooffset,
+    const int8_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_tofloat32_fromint8(
-      float* toptr,
-      int64_t tooffset,
-      const int8_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_tofloat32_fromint8(
+    float * toptr,
+    int64_t tooffset,
+    const int8_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_tofloat64_fromint8(
-      double* toptr,
-      int64_t tooffset,
-      const int8_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_tofloat64_fromint8(
+    double * toptr,
+    int64_t tooffset,
+    const int8_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
@@ -819,9 +819,9 @@ extern "C" {
   awkward_NumpyArray_fill_tocomplex64_fromint8(
     std::complex<float> * toptr,
     int64_t tooffset,
-    const int8_t* fromptr,
+    const int8_t * fromptr,
     int64_t length);
-  /// @param toptr outparam
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
@@ -829,119 +829,119 @@ extern "C" {
   awkward_NumpyArray_fill_tocomplex128_fromint8(
     std::complex<double> * toptr,
     int64_t tooffset,
-    const int8_t* fromptr,
+    const int8_t * fromptr,
     int64_t length);
-  /// @param toptr outparam
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_tobool_fromint16(
-      bool* toptr,
-      int64_t tooffset,
-      const int16_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_tobool_fromint16(
+    bool * toptr,
+    int64_t tooffset,
+    const int16_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_toint8_fromint16(
-      int8_t* toptr,
-      int64_t tooffset,
-      const int16_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_toint8_fromint16(
+    int8_t * toptr,
+    int64_t tooffset,
+    const int16_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_toint16_fromint16(
-      int16_t* toptr,
-      int64_t tooffset,
-      const int16_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_toint16_fromint16(
+    int16_t * toptr,
+    int64_t tooffset,
+    const int16_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_toint32_fromint16(
-      int32_t* toptr,
-      int64_t tooffset,
-      const int16_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_toint32_fromint16(
+    int32_t * toptr,
+    int64_t tooffset,
+    const int16_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_toint64_fromint16(
-      int64_t* toptr,
-      int64_t tooffset,
-      const int16_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_toint64_fromint16(
+    int64_t * toptr,
+    int64_t tooffset,
+    const int16_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_touint8_fromint16(
-      uint8_t* toptr,
-      int64_t tooffset,
-      const int16_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_touint8_fromint16(
+    uint8_t * toptr,
+    int64_t tooffset,
+    const int16_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_touint16_fromint16(
-      uint16_t* toptr,
-      int64_t tooffset,
-      const int16_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_touint16_fromint16(
+    uint16_t * toptr,
+    int64_t tooffset,
+    const int16_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_touint32_fromint16(
-      uint32_t* toptr,
-      int64_t tooffset,
-      const int16_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_touint32_fromint16(
+    uint32_t * toptr,
+    int64_t tooffset,
+    const int16_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_touint64_fromint16(
-      uint64_t* toptr,
-      int64_t tooffset,
-      const int16_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_touint64_fromint16(
+    uint64_t * toptr,
+    int64_t tooffset,
+    const int16_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_tofloat32_fromint16(
-      float* toptr,
-      int64_t tooffset,
-      const int16_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_tofloat32_fromint16(
+    float * toptr,
+    int64_t tooffset,
+    const int16_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_tofloat64_fromint16(
-      double* toptr,
-      int64_t tooffset,
-      const int16_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_tofloat64_fromint16(
+    double * toptr,
+    int64_t tooffset,
+    const int16_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
@@ -949,9 +949,9 @@ extern "C" {
   awkward_NumpyArray_fill_tocomplex64_fromint16(
     std::complex<float> * toptr,
     int64_t tooffset,
-    const int16_t* fromptr,
+    const int16_t * fromptr,
     int64_t length);
-  /// @param toptr outparam
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
@@ -959,119 +959,119 @@ extern "C" {
   awkward_NumpyArray_fill_tocomplex128_fromint16(
     std::complex<double> * toptr,
     int64_t tooffset,
-    const int16_t* fromptr,
+    const int16_t * fromptr,
     int64_t length);
-  /// @param toptr outparam
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_tobool_fromint32(
-      bool* toptr,
-      int64_t tooffset,
-      const int32_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_tobool_fromint32(
+    bool * toptr,
+    int64_t tooffset,
+    const int32_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_toint8_fromint32(
-      int8_t* toptr,
-      int64_t tooffset,
-      const int32_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_toint8_fromint32(
+    int8_t * toptr,
+    int64_t tooffset,
+    const int32_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_toint16_fromint32(
-      int16_t* toptr,
-      int64_t tooffset,
-      const int32_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_toint16_fromint32(
+    int16_t * toptr,
+    int64_t tooffset,
+    const int32_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_toint32_fromint32(
-      int32_t* toptr,
-      int64_t tooffset,
-      const int32_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_toint32_fromint32(
+    int32_t * toptr,
+    int64_t tooffset,
+    const int32_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_toint64_fromint32(
-      int64_t* toptr,
-      int64_t tooffset,
-      const int32_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_toint64_fromint32(
+    int64_t * toptr,
+    int64_t tooffset,
+    const int32_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_touint8_fromint32(
-      uint8_t* toptr,
-      int64_t tooffset,
-      const int32_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_touint8_fromint32(
+    uint8_t * toptr,
+    int64_t tooffset,
+    const int32_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_touint16_fromint32(
-      uint16_t* toptr,
-      int64_t tooffset,
-      const int32_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_touint16_fromint32(
+    uint16_t * toptr,
+    int64_t tooffset,
+    const int32_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_touint32_fromint32(
-      uint32_t* toptr,
-      int64_t tooffset,
-      const int32_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_touint32_fromint32(
+    uint32_t * toptr,
+    int64_t tooffset,
+    const int32_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_touint64_fromint32(
-      uint64_t* toptr,
-      int64_t tooffset,
-      const int32_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_touint64_fromint32(
+    uint64_t * toptr,
+    int64_t tooffset,
+    const int32_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_tofloat32_fromint32(
-      float* toptr,
-      int64_t tooffset,
-      const int32_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_tofloat32_fromint32(
+    float * toptr,
+    int64_t tooffset,
+    const int32_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_tofloat64_fromint32(
-      double* toptr,
-      int64_t tooffset,
-      const int32_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_tofloat64_fromint32(
+    double * toptr,
+    int64_t tooffset,
+    const int32_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
@@ -1079,9 +1079,9 @@ extern "C" {
   awkward_NumpyArray_fill_tocomplex64_fromint32(
     std::complex<float> * toptr,
     int64_t tooffset,
-    const int32_t* fromptr,
+    const int32_t * fromptr,
     int64_t length);
-  /// @param toptr outparam
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
@@ -1089,119 +1089,119 @@ extern "C" {
   awkward_NumpyArray_fill_tocomplex128_fromint32(
     std::complex<double> * toptr,
     int64_t tooffset,
-    const int32_t* fromptr,
+    const int32_t * fromptr,
     int64_t length);
-  /// @param toptr outparam
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_tobool_fromint64(
-      bool* toptr,
-      int64_t tooffset,
-      const int64_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_tobool_fromint64(
+    bool * toptr,
+    int64_t tooffset,
+    const int64_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_toint8_fromint64(
-      int8_t* toptr,
-      int64_t tooffset,
-      const int64_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_toint8_fromint64(
+    int8_t * toptr,
+    int64_t tooffset,
+    const int64_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_toint16_fromint64(
-      int16_t* toptr,
-      int64_t tooffset,
-      const int64_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_toint16_fromint64(
+    int16_t * toptr,
+    int64_t tooffset,
+    const int64_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_toint32_fromint64(
-      int32_t* toptr,
-      int64_t tooffset,
-      const int64_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_toint32_fromint64(
+    int32_t * toptr,
+    int64_t tooffset,
+    const int64_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_toint64_fromint64(
-      int64_t* toptr,
-      int64_t tooffset,
-      const int64_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_toint64_fromint64(
+    int64_t * toptr,
+    int64_t tooffset,
+    const int64_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_touint8_fromint64(
-      uint8_t* toptr,
-      int64_t tooffset,
-      const int64_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_touint8_fromint64(
+    uint8_t * toptr,
+    int64_t tooffset,
+    const int64_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_touint16_fromint64(
-      uint16_t* toptr,
-      int64_t tooffset,
-      const int64_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_touint16_fromint64(
+    uint16_t * toptr,
+    int64_t tooffset,
+    const int64_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_touint32_fromint64(
-      uint32_t* toptr,
-      int64_t tooffset,
-      const int64_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_touint32_fromint64(
+    uint32_t * toptr,
+    int64_t tooffset,
+    const int64_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_touint64_fromint64(
-      uint64_t* toptr,
-      int64_t tooffset,
-      const int64_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_touint64_fromint64(
+    uint64_t * toptr,
+    int64_t tooffset,
+    const int64_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_tofloat32_fromint64(
-      float* toptr,
-      int64_t tooffset,
-      const int64_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_tofloat32_fromint64(
+    float * toptr,
+    int64_t tooffset,
+    const int64_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_tofloat64_fromint64(
-      double* toptr,
-      int64_t tooffset,
-      const int64_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_tofloat64_fromint64(
+    double * toptr,
+    int64_t tooffset,
+    const int64_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
@@ -1209,9 +1209,9 @@ extern "C" {
   awkward_NumpyArray_fill_tocomplex64_fromint64(
     std::complex<float> * toptr,
     int64_t tooffset,
-    const int64_t* fromptr,
+    const int64_t * fromptr,
     int64_t length);
-  /// @param toptr outparam
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
@@ -1219,119 +1219,119 @@ extern "C" {
   awkward_NumpyArray_fill_tocomplex128_fromint64(
     std::complex<double> * toptr,
     int64_t tooffset,
-    const int64_t* fromptr,
+    const int64_t * fromptr,
     int64_t length);
-  /// @param toptr outparam
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_tobool_fromuint8(
-      bool* toptr,
-      int64_t tooffset,
-      const uint8_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_tobool_fromuint8(
+    bool * toptr,
+    int64_t tooffset,
+    const uint8_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_toint8_fromuint8(
-      int8_t* toptr,
-      int64_t tooffset,
-      const uint8_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_toint8_fromuint8(
+    int8_t * toptr,
+    int64_t tooffset,
+    const uint8_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_toint16_fromuint8(
-      int16_t* toptr,
-      int64_t tooffset,
-      const uint8_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_toint16_fromuint8(
+    int16_t * toptr,
+    int64_t tooffset,
+    const uint8_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_toint32_fromuint8(
-      int32_t* toptr,
-      int64_t tooffset,
-      const uint8_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_toint32_fromuint8(
+    int32_t * toptr,
+    int64_t tooffset,
+    const uint8_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_toint64_fromuint8(
-      int64_t* toptr,
-      int64_t tooffset,
-      const uint8_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_toint64_fromuint8(
+    int64_t * toptr,
+    int64_t tooffset,
+    const uint8_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_touint8_fromuint8(
-      uint8_t* toptr,
-      int64_t tooffset,
-      const uint8_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_touint8_fromuint8(
+    uint8_t * toptr,
+    int64_t tooffset,
+    const uint8_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_touint16_fromuint8(
-      uint16_t* toptr,
-      int64_t tooffset,
-      const uint8_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_touint16_fromuint8(
+    uint16_t * toptr,
+    int64_t tooffset,
+    const uint8_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_touint32_fromuint8(
-      uint32_t* toptr,
-      int64_t tooffset,
-      const uint8_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_touint32_fromuint8(
+    uint32_t * toptr,
+    int64_t tooffset,
+    const uint8_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_touint64_fromuint8(
-      uint64_t* toptr,
-      int64_t tooffset,
-      const uint8_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_touint64_fromuint8(
+    uint64_t * toptr,
+    int64_t tooffset,
+    const uint8_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_tofloat32_fromuint8(
-      float* toptr,
-      int64_t tooffset,
-      const uint8_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_tofloat32_fromuint8(
+    float * toptr,
+    int64_t tooffset,
+    const uint8_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_tofloat64_fromuint8(
-      double* toptr,
-      int64_t tooffset,
-      const uint8_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_tofloat64_fromuint8(
+    double * toptr,
+    int64_t tooffset,
+    const uint8_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
@@ -1339,9 +1339,9 @@ extern "C" {
   awkward_NumpyArray_fill_tocomplex64_fromuint8(
     std::complex<float> * toptr,
     int64_t tooffset,
-    const uint8_t* fromptr,
+    const uint8_t * fromptr,
     int64_t length);
-  /// @param toptr outparam
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
@@ -1349,119 +1349,119 @@ extern "C" {
   awkward_NumpyArray_fill_tocomplex128_fromuint8(
     std::complex<double> * toptr,
     int64_t tooffset,
-    const uint8_t* fromptr,
+    const uint8_t * fromptr,
     int64_t length);
-  /// @param toptr outparam
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_tobool_fromuint16(
-      bool* toptr,
-      int64_t tooffset,
-      const uint16_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_tobool_fromuint16(
+    bool * toptr,
+    int64_t tooffset,
+    const uint16_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_toint8_fromuint16(
-      int8_t* toptr,
-      int64_t tooffset,
-      const uint16_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_toint8_fromuint16(
+    int8_t * toptr,
+    int64_t tooffset,
+    const uint16_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_toint16_fromuint16(
-      int16_t* toptr,
-      int64_t tooffset,
-      const uint16_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_toint16_fromuint16(
+    int16_t * toptr,
+    int64_t tooffset,
+    const uint16_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_toint32_fromuint16(
-      int32_t* toptr,
-      int64_t tooffset,
-      const uint16_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_toint32_fromuint16(
+    int32_t * toptr,
+    int64_t tooffset,
+    const uint16_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_toint64_fromuint16(
-      int64_t* toptr,
-      int64_t tooffset,
-      const uint16_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_toint64_fromuint16(
+    int64_t * toptr,
+    int64_t tooffset,
+    const uint16_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_touint8_fromuint16(
-      uint8_t* toptr,
-      int64_t tooffset,
-      const uint16_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_touint8_fromuint16(
+    uint8_t * toptr,
+    int64_t tooffset,
+    const uint16_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_touint16_fromuint16(
-      uint16_t* toptr,
-      int64_t tooffset,
-      const uint16_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_touint16_fromuint16(
+    uint16_t * toptr,
+    int64_t tooffset,
+    const uint16_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_touint32_fromuint16(
-      uint32_t* toptr,
-      int64_t tooffset,
-      const uint16_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_touint32_fromuint16(
+    uint32_t * toptr,
+    int64_t tooffset,
+    const uint16_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_touint64_fromuint16(
-      uint64_t* toptr,
-      int64_t tooffset,
-      const uint16_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_touint64_fromuint16(
+    uint64_t * toptr,
+    int64_t tooffset,
+    const uint16_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_tofloat32_fromuint16(
-      float* toptr,
-      int64_t tooffset,
-      const uint16_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_tofloat32_fromuint16(
+    float * toptr,
+    int64_t tooffset,
+    const uint16_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_tofloat64_fromuint16(
-      double* toptr,
-      int64_t tooffset,
-      const uint16_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_tofloat64_fromuint16(
+    double * toptr,
+    int64_t tooffset,
+    const uint16_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
@@ -1469,9 +1469,9 @@ extern "C" {
   awkward_NumpyArray_fill_tocomplex64_fromuint16(
     std::complex<float> * toptr,
     int64_t tooffset,
-    const uint16_t* fromptr,
+    const uint16_t * fromptr,
     int64_t length);
-  /// @param toptr outparam
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
@@ -1479,119 +1479,119 @@ extern "C" {
   awkward_NumpyArray_fill_tocomplex128_fromuint16(
     std::complex<double> * toptr,
     int64_t tooffset,
-    const uint16_t* fromptr,
+    const uint16_t * fromptr,
     int64_t length);
-  /// @param toptr outparam
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_tobool_fromuint32(
-      bool* toptr,
-      int64_t tooffset,
-      const uint32_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_tobool_fromuint32(
+    bool * toptr,
+    int64_t tooffset,
+    const uint32_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_toint8_fromuint32(
-      int8_t* toptr,
-      int64_t tooffset,
-      const uint32_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_toint8_fromuint32(
+    int8_t * toptr,
+    int64_t tooffset,
+    const uint32_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_toint16_fromuint32(
-      int16_t* toptr,
-      int64_t tooffset,
-      const uint32_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_toint16_fromuint32(
+    int16_t * toptr,
+    int64_t tooffset,
+    const uint32_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_toint32_fromuint32(
-      int32_t* toptr,
-      int64_t tooffset,
-      const uint32_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_toint32_fromuint32(
+    int32_t * toptr,
+    int64_t tooffset,
+    const uint32_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_toint64_fromuint32(
-      int64_t* toptr,
-      int64_t tooffset,
-      const uint32_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_toint64_fromuint32(
+    int64_t * toptr,
+    int64_t tooffset,
+    const uint32_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_touint8_fromuint32(
-      uint8_t* toptr,
-      int64_t tooffset,
-      const uint32_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_touint8_fromuint32(
+    uint8_t * toptr,
+    int64_t tooffset,
+    const uint32_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_touint16_fromuint32(
-      uint16_t* toptr,
-      int64_t tooffset,
-      const uint32_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_touint16_fromuint32(
+    uint16_t * toptr,
+    int64_t tooffset,
+    const uint32_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_touint32_fromuint32(
-      uint32_t* toptr,
-      int64_t tooffset,
-      const uint32_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_touint32_fromuint32(
+    uint32_t * toptr,
+    int64_t tooffset,
+    const uint32_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_touint64_fromuint32(
-      uint64_t* toptr,
-      int64_t tooffset,
-      const uint32_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_touint64_fromuint32(
+    uint64_t * toptr,
+    int64_t tooffset,
+    const uint32_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_tofloat32_fromuint32(
-      float* toptr,
-      int64_t tooffset,
-      const uint32_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_tofloat32_fromuint32(
+    float * toptr,
+    int64_t tooffset,
+    const uint32_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
   awkward_NumpyArray_fill_tofloat64_fromuint32(
-      double* toptr,
-      int64_t tooffset,
-      const uint32_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+    double * toptr,
+    int64_t tooffset,
+    const uint32_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
@@ -1599,9 +1599,9 @@ extern "C" {
   awkward_NumpyArray_fill_tocomplex64_fromuint32(
     std::complex<float> * toptr,
     int64_t tooffset,
-    const uint32_t* fromptr,
+    const uint32_t * fromptr,
     int64_t length);
-  /// @param toptr outparam
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
@@ -1609,119 +1609,119 @@ extern "C" {
   awkward_NumpyArray_fill_tocomplex128_fromuint32(
     std::complex<double> * toptr,
     int64_t tooffset,
-    const uint32_t* fromptr,
+    const uint32_t * fromptr,
     int64_t length);
-  /// @param toptr outparam
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_tobool_fromuint64(
-      bool* toptr,
-      int64_t tooffset,
-      const uint64_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_tobool_fromuint64(
+    bool * toptr,
+    int64_t tooffset,
+    const uint64_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_toint8_fromuint64(
-      int8_t* toptr,
-      int64_t tooffset,
-      const uint64_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_toint8_fromuint64(
+    int8_t * toptr,
+    int64_t tooffset,
+    const uint64_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_toint16_fromuint64(
-      int16_t* toptr,
-      int64_t tooffset,
-      const uint64_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_toint16_fromuint64(
+    int16_t * toptr,
+    int64_t tooffset,
+    const uint64_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_toint32_fromuint64(
-      int32_t* toptr,
-      int64_t tooffset,
-      const uint64_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_toint32_fromuint64(
+    int32_t * toptr,
+    int64_t tooffset,
+    const uint64_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_toint64_fromuint64(
-      int64_t* toptr,
-      int64_t tooffset,
-      const uint64_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_toint64_fromuint64(
+    int64_t * toptr,
+    int64_t tooffset,
+    const uint64_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_touint8_fromuint64(
-      uint8_t* toptr,
-      int64_t tooffset,
-      const uint64_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_touint8_fromuint64(
+    uint8_t * toptr,
+    int64_t tooffset,
+    const uint64_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_touint16_fromuint64(
-      uint16_t* toptr,
-      int64_t tooffset,
-      const uint64_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_touint16_fromuint64(
+    uint16_t * toptr,
+    int64_t tooffset,
+    const uint64_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_touint32_fromuint64(
-      uint32_t* toptr,
-      int64_t tooffset,
-      const uint64_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_touint32_fromuint64(
+    uint32_t * toptr,
+    int64_t tooffset,
+    const uint64_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_touint64_fromuint64(
-      uint64_t* toptr,
-      int64_t tooffset,
-      const uint64_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_touint64_fromuint64(
+    uint64_t * toptr,
+    int64_t tooffset,
+    const uint64_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_tofloat32_fromuint64(
-      float* toptr,
-      int64_t tooffset,
-      const uint64_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_tofloat32_fromuint64(
+    float * toptr,
+    int64_t tooffset,
+    const uint64_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_tofloat64_fromuint64(
-      double* toptr,
-      int64_t tooffset,
-      const uint64_t* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_tofloat64_fromuint64(
+    double * toptr,
+    int64_t tooffset,
+    const uint64_t * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
@@ -1729,9 +1729,9 @@ extern "C" {
   awkward_NumpyArray_fill_tocomplex64_fromuint64(
     std::complex<float> * toptr,
     int64_t tooffset,
-    const uint64_t* fromptr,
+    const uint64_t * fromptr,
     int64_t length);
-  /// @param toptr outparam
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
@@ -1739,119 +1739,119 @@ extern "C" {
   awkward_NumpyArray_fill_tocomplex128_fromuint64(
     std::complex<double> * toptr,
     int64_t tooffset,
-    const uint64_t* fromptr,
+    const uint64_t * fromptr,
     int64_t length);
-  /// @param toptr outparam
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_tobool_fromfloat32(
-      bool* toptr,
-      int64_t tooffset,
-      const float* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_tobool_fromfloat32(
+    bool * toptr,
+    int64_t tooffset,
+    const float * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_toint8_fromfloat32(
-      int8_t* toptr,
-      int64_t tooffset,
-      const float* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_toint8_fromfloat32(
+    int8_t * toptr,
+    int64_t tooffset,
+    const float * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_toint16_fromfloat32(
-      int16_t* toptr,
-      int64_t tooffset,
-      const float* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_toint16_fromfloat32(
+    int16_t * toptr,
+    int64_t tooffset,
+    const float * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_toint32_fromfloat32(
-      int32_t* toptr,
-      int64_t tooffset,
-      const float* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_toint32_fromfloat32(
+    int32_t * toptr,
+    int64_t tooffset,
+    const float * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_toint64_fromfloat32(
-      int64_t* toptr,
-      int64_t tooffset,
-      const float* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_toint64_fromfloat32(
+    int64_t * toptr,
+    int64_t tooffset,
+    const float * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_touint8_fromfloat32(
-      uint8_t* toptr,
-      int64_t tooffset,
-      const float* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_touint8_fromfloat32(
+    uint8_t * toptr,
+    int64_t tooffset,
+    const float * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_touint16_fromfloat32(
-      uint16_t* toptr,
-      int64_t tooffset,
-      const float* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_touint16_fromfloat32(
+    uint16_t * toptr,
+    int64_t tooffset,
+    const float * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_touint32_fromfloat32(
-      uint32_t* toptr,
-      int64_t tooffset,
-      const float* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_touint32_fromfloat32(
+    uint32_t * toptr,
+    int64_t tooffset,
+    const float * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_touint64_fromfloat32(
-      uint64_t* toptr,
-      int64_t tooffset,
-      const float* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_touint64_fromfloat32(
+    uint64_t * toptr,
+    int64_t tooffset,
+    const float * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_tofloat32_fromfloat32(
-      float* toptr,
-      int64_t tooffset,
-      const float* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_tofloat32_fromfloat32(
+    float * toptr,
+    int64_t tooffset,
+    const float * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_tofloat64_fromfloat32(
-      double* toptr,
-      int64_t tooffset,
-      const float* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_tofloat64_fromfloat32(
+    double * toptr,
+    int64_t tooffset,
+    const float * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
@@ -1859,9 +1859,9 @@ extern "C" {
   awkward_NumpyArray_fill_tocomplex64_fromfloat32(
     std::complex<float> * toptr,
     int64_t tooffset,
-    const float* fromptr,
+    const float * fromptr,
     int64_t length);
-  /// @param toptr outparam
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
@@ -1869,119 +1869,119 @@ extern "C" {
   awkward_NumpyArray_fill_tocomplex128_fromfloat32(
     std::complex<double> * toptr,
     int64_t tooffset,
-    const float* fromptr,
+    const float * fromptr,
     int64_t length);
-  /// @param toptr outparam
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_tobool_fromfloat64(
-      bool* toptr,
-      int64_t tooffset,
-      const double* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_tobool_fromfloat64(
+    bool * toptr,
+    int64_t tooffset,
+    const double * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_toint8_fromfloat64(
-      int8_t* toptr,
-      int64_t tooffset,
-      const double* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_toint8_fromfloat64(
+    int8_t * toptr,
+    int64_t tooffset,
+    const double * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_toint16_fromfloat64(
-      int16_t* toptr,
-      int64_t tooffset,
-      const double* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_toint16_fromfloat64(
+    int16_t * toptr,
+    int64_t tooffset,
+    const double * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_toint32_fromfloat64(
-      int32_t* toptr,
-      int64_t tooffset,
-      const double* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_toint32_fromfloat64(
+    int32_t * toptr,
+    int64_t tooffset,
+    const double * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_toint64_fromfloat64(
-      int64_t* toptr,
-      int64_t tooffset,
-      const double* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_toint64_fromfloat64(
+    int64_t * toptr,
+    int64_t tooffset,
+    const double * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_touint8_fromfloat64(
-      uint8_t* toptr,
-      int64_t tooffset,
-      const double* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_touint8_fromfloat64(
+    uint8_t * toptr,
+    int64_t tooffset,
+    const double * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_touint16_fromfloat64(
-      uint16_t* toptr,
-      int64_t tooffset,
-      const double* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_touint16_fromfloat64(
+    uint16_t * toptr,
+    int64_t tooffset,
+    const double * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_touint32_fromfloat64(
-      uint32_t* toptr,
-      int64_t tooffset,
-      const double* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_touint32_fromfloat64(
+    uint32_t * toptr,
+    int64_t tooffset,
+    const double * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_touint64_fromfloat64(
-      uint64_t* toptr,
-      int64_t tooffset,
-      const double* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_touint64_fromfloat64(
+    uint64_t * toptr,
+    int64_t tooffset,
+    const double * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_tofloat32_fromfloat64(
-      float* toptr,
-      int64_t tooffset,
-      const double* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_tofloat32_fromfloat64(
+    float * toptr,
+    int64_t tooffset,
+    const double * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_tofloat64_fromfloat64(
-      double* toptr,
-      int64_t tooffset,
-      const double* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_tofloat64_fromfloat64(
+    double * toptr,
+    int64_t tooffset,
+    const double * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
@@ -1989,9 +1989,9 @@ extern "C" {
   awkward_NumpyArray_fill_tocomplex64_fromfloat64(
     std::complex<float> * toptr,
     int64_t tooffset,
-    const double* fromptr,
+    const double * fromptr,
     int64_t length);
-  /// @param toptr outparam
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
@@ -1999,120 +1999,119 @@ extern "C" {
   awkward_NumpyArray_fill_tocomplex128_fromfloat64(
     std::complex<double> * toptr,
     int64_t tooffset,
-    const double* fromptr,
+    const double * fromptr,
     int64_t length);
-  /// @param toptr outparam
-  /// @param tooffset inparam role: IndexedArray-index-offset
-  /// @param fromptr inparam role: NumpyArray-ptr
-  /// @param length inparam
-
-  EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_tobool_fromcomplex64(
-      bool* toptr,
-      int64_t tooffset,
-      const std::complex<float>* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_toint8_fromcomplex64(
-      int8_t* toptr,
-      int64_t tooffset,
-      const std::complex<float>* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_tobool_fromcomplex64(
+    bool * toptr,
+    int64_t tooffset,
+    const std::complex<float> * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_toint16_fromcomplex64(
-      int16_t* toptr,
-      int64_t tooffset,
-      const std::complex<float>* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_toint8_fromcomplex64(
+    int8_t * toptr,
+    int64_t tooffset,
+    const std::complex<float> * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_toint32_fromcomplex64(
-      int32_t* toptr,
-      int64_t tooffset,
-      const std::complex<float>* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_toint16_fromcomplex64(
+    int16_t * toptr,
+    int64_t tooffset,
+    const std::complex<float> * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_toint64_fromcomplex64(
-      int64_t* toptr,
-      int64_t tooffset,
-      const std::complex<float>* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_toint32_fromcomplex64(
+    int32_t * toptr,
+    int64_t tooffset,
+    const std::complex<float> * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_touint8_fromcomplex64(
-      uint8_t* toptr,
-      int64_t tooffset,
-      const std::complex<float>* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_toint64_fromcomplex64(
+    int64_t * toptr,
+    int64_t tooffset,
+    const std::complex<float> * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_touint16_fromcomplex64(
-      uint16_t* toptr,
-      int64_t tooffset,
-      const std::complex<float>* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_touint8_fromcomplex64(
+    uint8_t * toptr,
+    int64_t tooffset,
+    const std::complex<float> * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_touint32_fromcomplex64(
-      uint32_t* toptr,
-      int64_t tooffset,
-      const std::complex<float>* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_touint16_fromcomplex64(
+    uint16_t * toptr,
+    int64_t tooffset,
+    const std::complex<float> * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_touint64_fromcomplex64(
-      uint64_t* toptr,
-      int64_t tooffset,
-      const std::complex<float>* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_touint32_fromcomplex64(
+    uint32_t * toptr,
+    int64_t tooffset,
+    const std::complex<float> * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_tofloat32_fromcomplex64(
-      float* toptr,
-      int64_t tooffset,
-      const std::complex<float>* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_touint64_fromcomplex64(
+    uint64_t * toptr,
+    int64_t tooffset,
+    const std::complex<float> * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
   EXPORT_SYMBOL struct Error
-    awkward_NumpyArray_fill_tofloat64_fromcomplex64(
-      double* toptr,
-      int64_t tooffset,
-      const std::complex<float>* fromptr,
-      int64_t length);
-  /// @param toptr outparam
+  awkward_NumpyArray_fill_tofloat32_fromcomplex64(
+    float * toptr,
+    int64_t tooffset,
+    const std::complex<float> * fromptr,
+    int64_t length);
+/// @param toptr outparam
+  /// @param tooffset inparam role: IndexedArray-index-offset
+  /// @param fromptr inparam role: NumpyArray-ptr
+  /// @param length inparam
+  EXPORT_SYMBOL struct Error
+  awkward_NumpyArray_fill_tofloat64_fromcomplex64(
+    double * toptr,
+    int64_t tooffset,
+    const std::complex<float> * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
@@ -2120,9 +2119,9 @@ extern "C" {
   awkward_NumpyArray_fill_tocomplex64_fromcomplex64(
     std::complex<float> * toptr,
     int64_t tooffset,
-      const std::complex<float>* fromptr,
+    const std::complex<float> * fromptr,
     int64_t length);
-  /// @param toptr outparam
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
@@ -2130,9 +2129,109 @@ extern "C" {
   awkward_NumpyArray_fill_tocomplex128_fromcomplex64(
     std::complex<double> * toptr,
     int64_t tooffset,
-    const std::complex<float>* fromptr,
+    const std::complex<float> * fromptr,
     int64_t length);
-  /// @param toptr outparam
+/// @param toptr outparam
+  /// @param tooffset inparam role: IndexedArray-index-offset
+  /// @param fromptr inparam role: NumpyArray-ptr
+  /// @param length inparam
+  EXPORT_SYMBOL struct Error
+  awkward_NumpyArray_fill_tobool_fromcomplex128(
+    bool * toptr,
+    int64_t tooffset,
+    const std::complex<double> * fromptr,
+    int64_t length);
+/// @param toptr outparam
+  /// @param tooffset inparam role: IndexedArray-index-offset
+  /// @param fromptr inparam role: NumpyArray-ptr
+  /// @param length inparam
+  EXPORT_SYMBOL struct Error
+  awkward_NumpyArray_fill_toint8_fromcomplex128(
+    int8_t * toptr,
+    int64_t tooffset,
+    const std::complex<double> * fromptr,
+    int64_t length);
+/// @param toptr outparam
+  /// @param tooffset inparam role: IndexedArray-index-offset
+  /// @param fromptr inparam role: NumpyArray-ptr
+  /// @param length inparam
+  EXPORT_SYMBOL struct Error
+  awkward_NumpyArray_fill_toint16_fromcomplex128(
+    int16_t * toptr,
+    int64_t tooffset,
+    const std::complex<double> * fromptr,
+    int64_t length);
+/// @param toptr outparam
+  /// @param tooffset inparam role: IndexedArray-index-offset
+  /// @param fromptr inparam role: NumpyArray-ptr
+  /// @param length inparam
+  EXPORT_SYMBOL struct Error
+  awkward_NumpyArray_fill_toint32_fromcomplex128(
+    int32_t * toptr,
+    int64_t tooffset,
+    const std::complex<double> * fromptr,
+    int64_t length);
+/// @param toptr outparam
+  /// @param tooffset inparam role: IndexedArray-index-offset
+  /// @param fromptr inparam role: NumpyArray-ptr
+  /// @param length inparam
+  EXPORT_SYMBOL struct Error
+  awkward_NumpyArray_fill_toint64_fromcomplex128(
+    int64_t * toptr,
+    int64_t tooffset,
+    const std::complex<double> * fromptr,
+    int64_t length);
+/// @param toptr outparam
+  /// @param tooffset inparam role: IndexedArray-index-offset
+  /// @param fromptr inparam role: NumpyArray-ptr
+  /// @param length inparam
+  EXPORT_SYMBOL struct Error
+  awkward_NumpyArray_fill_touint8_fromcomplex128(
+    uint8_t * toptr,
+    int64_t tooffset,
+    const std::complex<double> * fromptr,
+    int64_t length);
+/// @param toptr outparam
+  /// @param tooffset inparam role: IndexedArray-index-offset
+  /// @param fromptr inparam role: NumpyArray-ptr
+  /// @param length inparam
+  EXPORT_SYMBOL struct Error
+  awkward_NumpyArray_fill_touint16_fromcomplex128(
+    uint16_t * toptr,
+    int64_t tooffset,
+    const std::complex<double> * fromptr,
+    int64_t length);
+/// @param toptr outparam
+  /// @param tooffset inparam role: IndexedArray-index-offset
+  /// @param fromptr inparam role: NumpyArray-ptr
+  /// @param length inparam
+  EXPORT_SYMBOL struct Error
+  awkward_NumpyArray_fill_touint32_fromcomplex128(
+    uint32_t * toptr,
+    int64_t tooffset,
+    const std::complex<double> * fromptr,
+    int64_t length);
+/// @param toptr outparam
+  /// @param tooffset inparam role: IndexedArray-index-offset
+  /// @param fromptr inparam role: NumpyArray-ptr
+  /// @param length inparam
+  EXPORT_SYMBOL struct Error
+  awkward_NumpyArray_fill_touint64_fromcomplex128(
+    uint64_t * toptr,
+    int64_t tooffset,
+    const std::complex<double> * fromptr,
+    int64_t length);
+/// @param toptr outparam
+  /// @param tooffset inparam role: IndexedArray-index-offset
+  /// @param fromptr inparam role: NumpyArray-ptr
+  /// @param length inparam
+  EXPORT_SYMBOL struct Error
+  awkward_NumpyArray_fill_tofloat32_fromcomplex128(
+    float * toptr,
+    int64_t tooffset,
+    const std::complex<double> * fromptr,
+    int64_t length);
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
@@ -2142,7 +2241,7 @@ extern "C" {
     int64_t tooffset,
     const std::complex<double> * fromptr,
     int64_t length);
-  /// @param toptr outparam
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
@@ -2150,9 +2249,9 @@ extern "C" {
   awkward_NumpyArray_fill_tocomplex64_fromcomplex128(
     std::complex<float> * toptr,
     int64_t tooffset,
-    const std::complex<double>* fromptr,
+    const std::complex<double> * fromptr,
     int64_t length);
-  /// @param toptr outparam
+/// @param toptr outparam
   /// @param tooffset inparam role: IndexedArray-index-offset
   /// @param fromptr inparam role: NumpyArray-ptr
   /// @param length inparam
@@ -2160,13 +2259,8 @@ extern "C" {
   awkward_NumpyArray_fill_tocomplex128_fromcomplex128(
     std::complex<double> * toptr,
     int64_t tooffset,
-    const std::complex<double>* fromptr,
+    const std::complex<double> * fromptr,
     int64_t length);
-  /// @param toptr outparam
-  /// @param tooffset inparam role: IndexedArray-index-offset
-  /// @param fromptr inparam role: NumpyArray-ptr
-  /// @param length inparam
-
 
 
   /// @param tostarts outparam

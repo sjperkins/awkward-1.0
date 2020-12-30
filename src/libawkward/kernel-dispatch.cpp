@@ -6593,3706 +6593,4905 @@ namespace awkward {
     }
 
 
-
     template <>
     ERROR NumpyArray_fill<bool, bool>(
-      kernel::lib ptr_lib,
-      bool *toptr,
-      int64_t tooffset,
-      const bool *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_tobool_frombool(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<bool, bool>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<bool, bool>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        bool *toptr,
+        int64_t tooffset,
+        const bool *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tobool_frombool(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<bool, bool>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<bool, bool>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<bool, int8_t>(
-      kernel::lib ptr_lib,
-      int8_t *toptr,
-      int64_t tooffset,
-      const bool *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_toint8_frombool(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<bool, int8_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<bool, int8_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        int8_t *toptr,
+        int64_t tooffset,
+        const bool *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_toint8_frombool(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<int8_t, bool>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<int8_t, bool>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<bool, int16_t>(
-      kernel::lib ptr_lib,
-      int16_t *toptr,
-      int64_t tooffset,
-      const bool *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_toint16_frombool(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<bool, int16_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<bool, int16_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        int16_t *toptr,
+        int64_t tooffset,
+        const bool *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_toint16_frombool(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<int16_t, bool>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<int16_t, bool>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<bool, int32_t>(
-      kernel::lib ptr_lib,
-      int32_t *toptr,
-      int64_t tooffset,
-      const bool *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_toint32_frombool(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<bool, int32_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<bool, int32_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        int32_t *toptr,
+        int64_t tooffset,
+        const bool *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_toint32_frombool(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<int32_t, bool>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<int32_t, bool>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<bool, int64_t>(
-      kernel::lib ptr_lib,
-      int64_t *toptr,
-      int64_t tooffset,
-      const bool *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_toint64_frombool(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<bool, int64_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<bool, int64_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        int64_t *toptr,
+        int64_t tooffset,
+        const bool *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_toint64_frombool(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<int64_t, bool>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<int64_t, bool>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<bool, uint8_t>(
-      kernel::lib ptr_lib,
-      uint8_t *toptr,
-      int64_t tooffset,
-      const bool *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_touint8_frombool(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<bool, uint8_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<bool, uint8_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        uint8_t *toptr,
+        int64_t tooffset,
+        const bool *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_touint8_frombool(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<uint8_t, bool>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<uint8_t, bool>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<bool, uint16_t>(
-      kernel::lib ptr_lib,
-      uint16_t *toptr,
-      int64_t tooffset,
-      const bool *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_touint16_frombool(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<bool, uint16_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<bool, uint16_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        uint16_t *toptr,
+        int64_t tooffset,
+        const bool *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_touint16_frombool(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<uint16_t, bool>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<uint16_t, bool>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<bool, uint32_t>(
-      kernel::lib ptr_lib,
-      uint32_t *toptr,
-      int64_t tooffset,
-      const bool *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_touint32_frombool(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<bool, uint32_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<bool, uint32_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        uint32_t *toptr,
+        int64_t tooffset,
+        const bool *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_touint32_frombool(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<uint32_t, bool>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<uint32_t, bool>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<bool, uint64_t>(
-      kernel::lib ptr_lib,
-      uint64_t *toptr,
-      int64_t tooffset,
-      const bool *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_touint64_frombool(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<bool, uint64_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<bool, uint64_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        uint64_t *toptr,
+        int64_t tooffset,
+        const bool *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_touint64_frombool(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<uint64_t, bool>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<uint64_t, bool>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<bool, float>(
-      kernel::lib ptr_lib,
-      float *toptr,
-      int64_t tooffset,
-      const bool *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_tofloat32_frombool(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<bool, float>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<bool, float>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        float *toptr,
+        int64_t tooffset,
+        const bool *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tofloat32_frombool(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<float, bool>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<float, bool>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<bool, double>(
-      kernel::lib ptr_lib,
-      double *toptr,
-      int64_t tooffset,
-      const bool *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_tofloat64_frombool(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<bool, double>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<bool, double>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        double *toptr,
+        int64_t tooffset,
+        const bool *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tofloat64_frombool(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<double, bool>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<double, bool>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
+    template <>
+    ERROR NumpyArray_fill<bool, std::complex<float>>(
+        kernel::lib ptr_lib,
+        std::complex<float> *toptr,
+        int64_t tooffset,
+        const bool *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tocomplex64_frombool(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<std::complex<float>, bool>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<std::complex<float>, bool>"
+                            + FILENAME(__LINE__)));
+        }
+    }
+
+
+    template <>
+    ERROR NumpyArray_fill<bool, std::complex<double>>(
+        kernel::lib ptr_lib,
+        std::complex<double> *toptr,
+        int64_t tooffset,
+        const bool *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tocomplex128_frombool(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<std::complex<double>, bool>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<std::complex<double>, bool>"
+                            + FILENAME(__LINE__)));
+        }
+    }
+
 
     template <>
     ERROR NumpyArray_fill<int8_t, bool>(
-      kernel::lib ptr_lib,
-      bool *toptr,
-      int64_t tooffset,
-      const int8_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_tobool_fromint8(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<int8_t, bool>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<int8_t, bool>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        bool *toptr,
+        int64_t tooffset,
+        const int8_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tobool_fromint8(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<bool, int8_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<bool, int8_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<int8_t, int8_t>(
-      kernel::lib ptr_lib,
-      int8_t *toptr,
-      int64_t tooffset,
-      const int8_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_toint8_fromint8(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<int8_t, int8_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<int8_t, int8_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        int8_t *toptr,
+        int64_t tooffset,
+        const int8_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_toint8_fromint8(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<int8_t, int8_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<int8_t, int8_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<int8_t, int16_t>(
-      kernel::lib ptr_lib,
-      int16_t *toptr,
-      int64_t tooffset,
-      const int8_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_toint16_fromint8(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<int8_t, int16_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<int8_t, int16_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        int16_t *toptr,
+        int64_t tooffset,
+        const int8_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_toint16_fromint8(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<int16_t, int8_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<int16_t, int8_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<int8_t, int32_t>(
-      kernel::lib ptr_lib,
-      int32_t *toptr,
-      int64_t tooffset,
-      const int8_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_toint32_fromint8(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<int8_t, int32_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<int8_t, int32_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        int32_t *toptr,
+        int64_t tooffset,
+        const int8_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_toint32_fromint8(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<int32_t, int8_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<int32_t, int8_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<int8_t, int64_t>(
-      kernel::lib ptr_lib,
-      int64_t *toptr,
-      int64_t tooffset,
-      const int8_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_toint64_fromint8(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<int8_t, int64_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<int8_t, int64_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        int64_t *toptr,
+        int64_t tooffset,
+        const int8_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_toint64_fromint8(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<int64_t, int8_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<int64_t, int8_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<int8_t, uint8_t>(
-      kernel::lib ptr_lib,
-      uint8_t *toptr,
-      int64_t tooffset,
-      const int8_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_touint8_fromint8(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<int8_t, uint8_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<int8_t, uint8_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        uint8_t *toptr,
+        int64_t tooffset,
+        const int8_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_touint8_fromint8(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<uint8_t, int8_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<uint8_t, int8_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<int8_t, uint16_t>(
-      kernel::lib ptr_lib,
-      uint16_t *toptr,
-      int64_t tooffset,
-      const int8_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_touint16_fromint8(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<int8_t, uint16_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<int8_t, uint16_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        uint16_t *toptr,
+        int64_t tooffset,
+        const int8_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_touint16_fromint8(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<uint16_t, int8_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<uint16_t, int8_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<int8_t, uint32_t>(
-      kernel::lib ptr_lib,
-      uint32_t *toptr,
-      int64_t tooffset,
-      const int8_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_touint32_fromint8(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<int8_t, uint32_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<int8_t, uint32_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        uint32_t *toptr,
+        int64_t tooffset,
+        const int8_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_touint32_fromint8(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<uint32_t, int8_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<uint32_t, int8_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<int8_t, uint64_t>(
-      kernel::lib ptr_lib,
-      uint64_t *toptr,
-      int64_t tooffset,
-      const int8_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_touint64_fromint8(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<int8_t, uint64_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<int8_t, uint64_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        uint64_t *toptr,
+        int64_t tooffset,
+        const int8_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_touint64_fromint8(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<uint64_t, int8_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<uint64_t, int8_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<int8_t, float>(
-      kernel::lib ptr_lib,
-      float *toptr,
-      int64_t tooffset,
-      const int8_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_tofloat32_fromint8(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<int8_t, float>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<int8_t, float>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        float *toptr,
+        int64_t tooffset,
+        const int8_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tofloat32_fromint8(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<float, int8_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<float, int8_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<int8_t, double>(
-      kernel::lib ptr_lib,
-      double *toptr,
-      int64_t tooffset,
-      const int8_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_tofloat64_fromint8(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<int8_t, double>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<int8_t, double>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        double *toptr,
+        int64_t tooffset,
+        const int8_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tofloat64_fromint8(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<double, int8_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<double, int8_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
 
     template <>
     ERROR NumpyArray_fill<int8_t, std::complex<float>>(
-      kernel::lib ptr_lib,
-      std::complex<float> *toptr,
-      int64_t tooffset,
-      const int8_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_tocomplex64_fromint8(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<int8_t, std::complex<double>>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<int8_t, std::complex<double>>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        std::complex<float> *toptr,
+        int64_t tooffset,
+        const int8_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tocomplex64_fromint8(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<std::complex<float>, int8_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<std::complex<float>, int8_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
 
     template <>
     ERROR NumpyArray_fill<int8_t, std::complex<double>>(
-      kernel::lib ptr_lib,
-      std::complex<double> *toptr,
-      int64_t tooffset,
-      const int8_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_tocomplex128_fromint8(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<int8_t, std::complex<double>>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<int8_t, std::complex<double>>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        std::complex<double> *toptr,
+        int64_t tooffset,
+        const int8_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tocomplex128_fromint8(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<std::complex<double>, int8_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<std::complex<double>, int8_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
 
 
     template <>
     ERROR NumpyArray_fill<int16_t, bool>(
-      kernel::lib ptr_lib,
-      bool *toptr,
-      int64_t tooffset,
-      const int16_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_tobool_fromint16(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<int16_t, bool>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<int16_t, bool>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        bool *toptr,
+        int64_t tooffset,
+        const int16_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tobool_fromint16(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<bool, int16_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<bool, int16_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<int16_t, int8_t>(
-      kernel::lib ptr_lib,
-      int8_t *toptr,
-      int64_t tooffset,
-      const int16_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_toint8_fromint16(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<int16_t, int8_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<int16_t, int8_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        int8_t *toptr,
+        int64_t tooffset,
+        const int16_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_toint8_fromint16(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<int8_t, int16_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<int8_t, int16_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<int16_t, int16_t>(
-      kernel::lib ptr_lib,
-      int16_t *toptr,
-      int64_t tooffset,
-      const int16_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_toint16_fromint16(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<int16_t, int16_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<int16_t, int16_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        int16_t *toptr,
+        int64_t tooffset,
+        const int16_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_toint16_fromint16(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<int16_t, int16_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<int16_t, int16_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<int16_t, int32_t>(
-      kernel::lib ptr_lib,
-      int32_t *toptr,
-      int64_t tooffset,
-      const int16_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_toint32_fromint16(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<int16_t, int32_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<int16_t, int32_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        int32_t *toptr,
+        int64_t tooffset,
+        const int16_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_toint32_fromint16(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<int32_t, int16_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<int32_t, int16_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<int16_t, int64_t>(
-      kernel::lib ptr_lib,
-      int64_t *toptr,
-      int64_t tooffset,
-      const int16_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_toint64_fromint16(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<int16_t, int64_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<int16_t, int64_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        int64_t *toptr,
+        int64_t tooffset,
+        const int16_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_toint64_fromint16(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<int64_t, int16_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<int64_t, int16_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<int16_t, uint8_t>(
-      kernel::lib ptr_lib,
-      uint8_t *toptr,
-      int64_t tooffset,
-      const int16_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_touint8_fromint16(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<int16_t, uint8_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<int16_t, uint8_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        uint8_t *toptr,
+        int64_t tooffset,
+        const int16_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_touint8_fromint16(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<uint8_t, int16_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<uint8_t, int16_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<int16_t, uint16_t>(
-      kernel::lib ptr_lib,
-      uint16_t *toptr,
-      int64_t tooffset,
-      const int16_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_touint16_fromint16(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<int16_t, uint16_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<int16_t, uint16_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        uint16_t *toptr,
+        int64_t tooffset,
+        const int16_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_touint16_fromint16(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<uint16_t, int16_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<uint16_t, int16_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<int16_t, uint32_t>(
-      kernel::lib ptr_lib,
-      uint32_t *toptr,
-      int64_t tooffset,
-      const int16_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_touint32_fromint16(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<int16_t, uint32_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<int16_t, uint32_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        uint32_t *toptr,
+        int64_t tooffset,
+        const int16_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_touint32_fromint16(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<uint32_t, int16_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<uint32_t, int16_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<int16_t, uint64_t>(
-      kernel::lib ptr_lib,
-      uint64_t *toptr,
-      int64_t tooffset,
-      const int16_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_touint64_fromint16(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<int16_t, uint64_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<int16_t, uint64_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        uint64_t *toptr,
+        int64_t tooffset,
+        const int16_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_touint64_fromint16(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<uint64_t, int16_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<uint64_t, int16_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<int16_t, float>(
-      kernel::lib ptr_lib,
-      float *toptr,
-      int64_t tooffset,
-      const int16_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_tofloat32_fromint16(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<int16_t, float>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<int16_t, float>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        float *toptr,
+        int64_t tooffset,
+        const int16_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tofloat32_fromint16(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<float, int16_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<float, int16_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<int16_t, double>(
-      kernel::lib ptr_lib,
-      double *toptr,
-      int64_t tooffset,
-      const int16_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_tofloat64_fromint16(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<int16_t, double>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<int16_t, double>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        double *toptr,
+        int64_t tooffset,
+        const int16_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tofloat64_fromint16(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<double, int16_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<double, int16_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
 
     template <>
     ERROR NumpyArray_fill<int16_t, std::complex<float>>(
-      kernel::lib ptr_lib,
-      std::complex<float> *toptr,
-      int64_t tooffset,
-      const int16_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_tocomplex64_fromint16(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<int16_t, std::complex<float>>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<int16_t, std::complex<float>>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        std::complex<float> *toptr,
+        int64_t tooffset,
+        const int16_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tocomplex64_fromint16(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<std::complex<float>, int16_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<std::complex<float>, int16_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
 
 
     template <>
     ERROR NumpyArray_fill<int16_t, std::complex<double>>(
-      kernel::lib ptr_lib,
-      std::complex<double> *toptr,
-      int64_t tooffset,
-      const int16_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_tocomplex128_fromint16(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<int16_t, std::complex<double>>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<int16_t, std::complex<double>>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        std::complex<double> *toptr,
+        int64_t tooffset,
+        const int16_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tocomplex128_fromint16(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<std::complex<double>, int16_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<std::complex<double>, int16_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
 
     template <>
     ERROR NumpyArray_fill<int32_t, bool>(
-      kernel::lib ptr_lib,
-      bool *toptr,
-      int64_t tooffset,
-      const int32_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_tobool_fromint32(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<int32_t, bool>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<int32_t, bool>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        bool *toptr,
+        int64_t tooffset,
+        const int32_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tobool_fromint32(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<bool, int32_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<bool, int32_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<int32_t, int8_t>(
-      kernel::lib ptr_lib,
-      int8_t *toptr,
-      int64_t tooffset,
-      const int32_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_toint8_fromint32(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<int32_t, int8_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<int32_t, int8_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        int8_t *toptr,
+        int64_t tooffset,
+        const int32_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_toint8_fromint32(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<int8_t, int32_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<int8_t, int32_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<int32_t, int16_t>(
-      kernel::lib ptr_lib,
-      int16_t *toptr,
-      int64_t tooffset,
-      const int32_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_toint16_fromint32(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<int32_t, int16_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<int32_t, int16_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        int16_t *toptr,
+        int64_t tooffset,
+        const int32_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_toint16_fromint32(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<int16_t, int32_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<int16_t, int32_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<int32_t, int32_t>(
-      kernel::lib ptr_lib,
-      int32_t *toptr,
-      int64_t tooffset,
-      const int32_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_toint32_fromint32(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<int32_t, int32_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<int32_t, int32_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        int32_t *toptr,
+        int64_t tooffset,
+        const int32_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_toint32_fromint32(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<int32_t, int32_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<int32_t, int32_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<int32_t, int64_t>(
-      kernel::lib ptr_lib,
-      int64_t *toptr,
-      int64_t tooffset,
-      const int32_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_toint64_fromint32(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<int32_t, int64_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<int32_t, int64_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        int64_t *toptr,
+        int64_t tooffset,
+        const int32_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_toint64_fromint32(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<int64_t, int32_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<int64_t, int32_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<int32_t, uint8_t>(
-      kernel::lib ptr_lib,
-      uint8_t *toptr,
-      int64_t tooffset,
-      const int32_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_touint8_fromint32(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<int32_t, uint8_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<int32_t, uint8_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        uint8_t *toptr,
+        int64_t tooffset,
+        const int32_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_touint8_fromint32(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<uint8_t, int32_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<uint8_t, int32_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<int32_t, uint16_t>(
-      kernel::lib ptr_lib,
-      uint16_t *toptr,
-      int64_t tooffset,
-      const int32_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_touint16_fromint32(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<int32_t, uint16_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<int32_t, uint16_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        uint16_t *toptr,
+        int64_t tooffset,
+        const int32_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_touint16_fromint32(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<uint16_t, int32_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<uint16_t, int32_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<int32_t, uint32_t>(
-      kernel::lib ptr_lib,
-      uint32_t *toptr,
-      int64_t tooffset,
-      const int32_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_touint32_fromint32(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<int32_t, uint32_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<int32_t, uint32_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        uint32_t *toptr,
+        int64_t tooffset,
+        const int32_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_touint32_fromint32(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<uint32_t, int32_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<uint32_t, int32_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<int32_t, uint64_t>(
-      kernel::lib ptr_lib,
-      uint64_t *toptr,
-      int64_t tooffset,
-      const int32_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_touint64_fromint32(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<int32_t, uint64_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<int32_t, uint64_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        uint64_t *toptr,
+        int64_t tooffset,
+        const int32_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_touint64_fromint32(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<uint64_t, int32_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<uint64_t, int32_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<int32_t, float>(
-      kernel::lib ptr_lib,
-      float *toptr,
-      int64_t tooffset,
-      const int32_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_tofloat32_fromint32(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<int32_t, float>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<int32_t, float>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        float *toptr,
+        int64_t tooffset,
+        const int32_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tofloat32_fromint32(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<float, int32_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<float, int32_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<int32_t, double>(
-      kernel::lib ptr_lib,
-      double *toptr,
-      int64_t tooffset,
-      const int32_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_tofloat64_fromint32(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<int32_t, double>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<int32_t, double>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        double *toptr,
+        int64_t tooffset,
+        const int32_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tofloat64_fromint32(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<double, int32_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<double, int32_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
 
     template <>
     ERROR NumpyArray_fill<int32_t, std::complex<float>>(
-      kernel::lib ptr_lib,
-      std::complex<float> *toptr,
-      int64_t tooffset,
-      const int32_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_tocomplex64_fromint32(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<int32_t, std::complex<float>>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<int32_t, std::complex<float>>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        std::complex<float> *toptr,
+        int64_t tooffset,
+        const int32_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tocomplex64_fromint32(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<std::complex<float>, int32_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<std::complex<float>, int32_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
 
 
     template <>
     ERROR NumpyArray_fill<int32_t, std::complex<double>>(
-      kernel::lib ptr_lib,
-      std::complex<double> *toptr,
-      int64_t tooffset,
-      const int32_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_tocomplex128_fromint32(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<int32_t, std::complex<double>>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<int32_t, std::complex<double>>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        std::complex<double> *toptr,
+        int64_t tooffset,
+        const int32_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tocomplex128_fromint32(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<std::complex<double>, int32_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<std::complex<double>, int32_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
 
     template <>
     ERROR NumpyArray_fill<int64_t, bool>(
-      kernel::lib ptr_lib,
-      bool *toptr,
-      int64_t tooffset,
-      const int64_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_tobool_fromint64(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<int64_t, bool>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<int64_t, bool>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        bool *toptr,
+        int64_t tooffset,
+        const int64_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tobool_fromint64(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<bool, int64_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<bool, int64_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<int64_t, int8_t>(
-      kernel::lib ptr_lib,
-      int8_t *toptr,
-      int64_t tooffset,
-      const int64_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_toint8_fromint64(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<int64_t, int8_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<int64_t, int8_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        int8_t *toptr,
+        int64_t tooffset,
+        const int64_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_toint8_fromint64(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<int8_t, int64_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<int8_t, int64_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<int64_t, int16_t>(
-      kernel::lib ptr_lib,
-      int16_t *toptr,
-      int64_t tooffset,
-      const int64_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_toint16_fromint64(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<int64_t, int16_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<int64_t, int16_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        int16_t *toptr,
+        int64_t tooffset,
+        const int64_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_toint16_fromint64(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<int16_t, int64_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<int16_t, int64_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<int64_t, int32_t>(
-      kernel::lib ptr_lib,
-      int32_t *toptr,
-      int64_t tooffset,
-      const int64_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_toint32_fromint64(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<int64_t, int32_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<int64_t, int32_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        int32_t *toptr,
+        int64_t tooffset,
+        const int64_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_toint32_fromint64(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<int32_t, int64_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<int32_t, int64_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<int64_t, int64_t>(
-      kernel::lib ptr_lib,
-      int64_t *toptr,
-      int64_t tooffset,
-      const int64_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_toint64_fromint64(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<int64_t, int64_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<int64_t, int64_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        int64_t *toptr,
+        int64_t tooffset,
+        const int64_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_toint64_fromint64(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<int64_t, int64_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<int64_t, int64_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<int64_t, uint8_t>(
-      kernel::lib ptr_lib,
-      uint8_t *toptr,
-      int64_t tooffset,
-      const int64_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_touint8_fromint64(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<int64_t, uint8_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<int64_t, uint8_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        uint8_t *toptr,
+        int64_t tooffset,
+        const int64_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_touint8_fromint64(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<uint8_t, int64_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<uint8_t, int64_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<int64_t, uint16_t>(
-      kernel::lib ptr_lib,
-      uint16_t *toptr,
-      int64_t tooffset,
-      const int64_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_touint16_fromint64(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<int64_t, uint16_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<int64_t, uint16_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        uint16_t *toptr,
+        int64_t tooffset,
+        const int64_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_touint16_fromint64(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<uint16_t, int64_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<uint16_t, int64_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<int64_t, uint32_t>(
-      kernel::lib ptr_lib,
-      uint32_t *toptr,
-      int64_t tooffset,
-      const int64_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_touint32_fromint64(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<int64_t, uint32_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<int64_t, uint32_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        uint32_t *toptr,
+        int64_t tooffset,
+        const int64_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_touint32_fromint64(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<uint32_t, int64_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<uint32_t, int64_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<int64_t, uint64_t>(
-      kernel::lib ptr_lib,
-      uint64_t *toptr,
-      int64_t tooffset,
-      const int64_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_touint64_fromint64(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<int64_t, uint64_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<int64_t, uint64_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        uint64_t *toptr,
+        int64_t tooffset,
+        const int64_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_touint64_fromint64(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<uint64_t, int64_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<uint64_t, int64_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<int64_t, float>(
-      kernel::lib ptr_lib,
-      float *toptr,
-      int64_t tooffset,
-      const int64_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_tofloat32_fromint64(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<int64_t, float>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<int64_t, float>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        float *toptr,
+        int64_t tooffset,
+        const int64_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tofloat32_fromint64(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<float, int64_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<float, int64_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<int64_t, double>(
-      kernel::lib ptr_lib,
-      double *toptr,
-      int64_t tooffset,
-      const int64_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_tofloat64_fromint64(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<int64_t, double>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<int64_t, double>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        double *toptr,
+        int64_t tooffset,
+        const int64_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tofloat64_fromint64(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<double, int64_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<double, int64_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
 
     template <>
     ERROR NumpyArray_fill<int64_t, std::complex<float>>(
-      kernel::lib ptr_lib,
-      std::complex<float> *toptr,
-      int64_t tooffset,
-      const int64_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_tocomplex64_fromint64(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<int64_t, std::complex<float>>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<int64_t, std::complex<float>>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        std::complex<float> *toptr,
+        int64_t tooffset,
+        const int64_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tocomplex64_fromint64(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<std::complex<float>, int64_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<std::complex<float>, int64_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
 
 
     template <>
     ERROR NumpyArray_fill<int64_t, std::complex<double>>(
-      kernel::lib ptr_lib,
-      std::complex<double> *toptr,
-      int64_t tooffset,
-      const int64_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_tocomplex128_fromint64(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<int64_t, std::complex<double>>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<int64_t, std::complex<double>>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        std::complex<double> *toptr,
+        int64_t tooffset,
+        const int64_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tocomplex128_fromint64(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<std::complex<double>, int64_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<std::complex<double>, int64_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
 
     template <>
     ERROR NumpyArray_fill<uint8_t, bool>(
-      kernel::lib ptr_lib,
-      bool *toptr,
-      int64_t tooffset,
-      const uint8_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_tobool_fromuint8(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<uint8_t, bool>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<uint8_t, bool>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        bool *toptr,
+        int64_t tooffset,
+        const uint8_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tobool_fromuint8(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<bool, uint8_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<bool, uint8_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<uint8_t, int8_t>(
-      kernel::lib ptr_lib,
-      int8_t *toptr,
-      int64_t tooffset,
-      const uint8_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_toint8_fromuint8(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<uint8_t, int8_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<uint8_t, int8_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        int8_t *toptr,
+        int64_t tooffset,
+        const uint8_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_toint8_fromuint8(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<int8_t, uint8_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<int8_t, uint8_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<uint8_t, int16_t>(
-      kernel::lib ptr_lib,
-      int16_t *toptr,
-      int64_t tooffset,
-      const uint8_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_toint16_fromuint8(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<uint8_t, int16_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<uint8_t, int16_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        int16_t *toptr,
+        int64_t tooffset,
+        const uint8_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_toint16_fromuint8(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<int16_t, uint8_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<int16_t, uint8_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<uint8_t, int32_t>(
-      kernel::lib ptr_lib,
-      int32_t *toptr,
-      int64_t tooffset,
-      const uint8_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_toint32_fromuint8(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<uint8_t, int32_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<uint8_t, int32_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        int32_t *toptr,
+        int64_t tooffset,
+        const uint8_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_toint32_fromuint8(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<int32_t, uint8_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<int32_t, uint8_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<uint8_t, int64_t>(
-      kernel::lib ptr_lib,
-      int64_t *toptr,
-      int64_t tooffset,
-      const uint8_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_toint64_fromuint8(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<uint8_t, int64_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<uint8_t, int64_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        int64_t *toptr,
+        int64_t tooffset,
+        const uint8_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_toint64_fromuint8(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<int64_t, uint8_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<int64_t, uint8_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<uint8_t, uint8_t>(
-      kernel::lib ptr_lib,
-      uint8_t *toptr,
-      int64_t tooffset,
-      const uint8_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_touint8_fromuint8(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<uint8_t, uint8_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<uint8_t, uint8_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        uint8_t *toptr,
+        int64_t tooffset,
+        const uint8_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_touint8_fromuint8(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<uint8_t, uint8_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<uint8_t, uint8_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<uint8_t, uint16_t>(
-      kernel::lib ptr_lib,
-      uint16_t *toptr,
-      int64_t tooffset,
-      const uint8_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_touint16_fromuint8(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<uint8_t, uint16_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<uint8_t, uint16_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        uint16_t *toptr,
+        int64_t tooffset,
+        const uint8_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_touint16_fromuint8(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<uint16_t, uint8_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<uint16_t, uint8_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<uint8_t, uint32_t>(
-      kernel::lib ptr_lib,
-      uint32_t *toptr,
-      int64_t tooffset,
-      const uint8_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_touint32_fromuint8(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<uint8_t, uint32_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<uint8_t, uint32_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        uint32_t *toptr,
+        int64_t tooffset,
+        const uint8_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_touint32_fromuint8(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<uint32_t, uint8_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<uint32_t, uint8_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<uint8_t, uint64_t>(
-      kernel::lib ptr_lib,
-      uint64_t *toptr,
-      int64_t tooffset,
-      const uint8_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_touint64_fromuint8(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<uint8_t, uint64_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<uint8_t, uint64_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        uint64_t *toptr,
+        int64_t tooffset,
+        const uint8_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_touint64_fromuint8(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<uint64_t, uint8_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<uint64_t, uint8_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<uint8_t, float>(
-      kernel::lib ptr_lib,
-      float *toptr,
-      int64_t tooffset,
-      const uint8_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_tofloat32_fromuint8(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<uint8_t, float>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<uint8_t, float>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        float *toptr,
+        int64_t tooffset,
+        const uint8_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tofloat32_fromuint8(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<float, uint8_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<float, uint8_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<uint8_t, double>(
-      kernel::lib ptr_lib,
-      double *toptr,
-      int64_t tooffset,
-      const uint8_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_tofloat64_fromuint8(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<uint8_t, double>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<uint8_t, double>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        double *toptr,
+        int64_t tooffset,
+        const uint8_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tofloat64_fromuint8(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<double, uint8_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<double, uint8_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
 
     template <>
     ERROR NumpyArray_fill<uint8_t, std::complex<float>>(
-      kernel::lib ptr_lib,
-      std::complex<float> *toptr,
-      int64_t tooffset,
-      const uint8_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_tocomplex64_fromuint8(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<uint8_t, std::complex<float>>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<uint8_t, std::complex<float>>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        std::complex<float> *toptr,
+        int64_t tooffset,
+        const uint8_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tocomplex64_fromuint8(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<std::complex<float>, uint8_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<std::complex<float>, uint8_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
 
 
     template <>
     ERROR NumpyArray_fill<uint8_t, std::complex<double>>(
-      kernel::lib ptr_lib,
-      std::complex<double> *toptr,
-      int64_t tooffset,
-      const uint8_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_tocomplex128_fromuint8(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<uint8_t, std::complex<double>>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<uint8_t, std::complex<double>>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        std::complex<double> *toptr,
+        int64_t tooffset,
+        const uint8_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tocomplex128_fromuint8(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<std::complex<double>, uint8_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<std::complex<double>, uint8_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
 
 
     template <>
     ERROR NumpyArray_fill<uint16_t, bool>(
-      kernel::lib ptr_lib,
-      bool *toptr,
-      int64_t tooffset,
-      const uint16_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_tobool_fromuint16(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<uint16_t, bool>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<uint16_t, bool>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        bool *toptr,
+        int64_t tooffset,
+        const uint16_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tobool_fromuint16(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<bool, uint16_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<bool, uint16_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<uint16_t, int8_t>(
-      kernel::lib ptr_lib,
-      int8_t *toptr,
-      int64_t tooffset,
-      const uint16_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_toint8_fromuint16(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<uint16_t, int8_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<uint16_t, int8_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        int8_t *toptr,
+        int64_t tooffset,
+        const uint16_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_toint8_fromuint16(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<int8_t, uint16_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<int8_t, uint16_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<uint16_t, int16_t>(
-      kernel::lib ptr_lib,
-      int16_t *toptr,
-      int64_t tooffset,
-      const uint16_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_toint16_fromuint16(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<uint16_t, int16_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<uint16_t, int16_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        int16_t *toptr,
+        int64_t tooffset,
+        const uint16_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_toint16_fromuint16(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<int16_t, uint16_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<int16_t, uint16_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<uint16_t, int32_t>(
-      kernel::lib ptr_lib,
-      int32_t *toptr,
-      int64_t tooffset,
-      const uint16_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_toint32_fromuint16(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<uint16_t, int32_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<uint16_t, int32_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        int32_t *toptr,
+        int64_t tooffset,
+        const uint16_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_toint32_fromuint16(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<int32_t, uint16_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<int32_t, uint16_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<uint16_t, int64_t>(
-      kernel::lib ptr_lib,
-      int64_t *toptr,
-      int64_t tooffset,
-      const uint16_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_toint64_fromuint16(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<uint16_t, int64_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<uint16_t, int64_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        int64_t *toptr,
+        int64_t tooffset,
+        const uint16_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_toint64_fromuint16(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<int64_t, uint16_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<int64_t, uint16_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<uint16_t, uint8_t>(
-      kernel::lib ptr_lib,
-      uint8_t *toptr,
-      int64_t tooffset,
-      const uint16_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_touint8_fromuint16(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<uint16_t, uint8_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<uint16_t, uint8_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        uint8_t *toptr,
+        int64_t tooffset,
+        const uint16_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_touint8_fromuint16(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<uint8_t, uint16_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<uint8_t, uint16_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<uint16_t, uint16_t>(
-      kernel::lib ptr_lib,
-      uint16_t *toptr,
-      int64_t tooffset,
-      const uint16_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_touint16_fromuint16(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<uint16_t, uint16_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<uint16_t, uint16_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        uint16_t *toptr,
+        int64_t tooffset,
+        const uint16_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_touint16_fromuint16(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<uint16_t, uint16_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<uint16_t, uint16_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<uint16_t, uint32_t>(
-      kernel::lib ptr_lib,
-      uint32_t *toptr,
-      int64_t tooffset,
-      const uint16_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_touint32_fromuint16(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<uint16_t, uint32_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<uint16_t, uint32_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        uint32_t *toptr,
+        int64_t tooffset,
+        const uint16_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_touint32_fromuint16(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<uint32_t, uint16_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<uint32_t, uint16_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<uint16_t, uint64_t>(
-      kernel::lib ptr_lib,
-      uint64_t *toptr,
-      int64_t tooffset,
-      const uint16_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_touint64_fromuint16(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<uint16_t, uint64_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<uint16_t, uint64_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        uint64_t *toptr,
+        int64_t tooffset,
+        const uint16_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_touint64_fromuint16(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<uint64_t, uint16_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<uint64_t, uint16_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<uint16_t, float>(
-      kernel::lib ptr_lib,
-      float *toptr,
-      int64_t tooffset,
-      const uint16_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_tofloat32_fromuint16(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<uint16_t, float>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<uint16_t, float>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        float *toptr,
+        int64_t tooffset,
+        const uint16_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tofloat32_fromuint16(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<float, uint16_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<float, uint16_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<uint16_t, double>(
-      kernel::lib ptr_lib,
-      double *toptr,
-      int64_t tooffset,
-      const uint16_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_tofloat64_fromuint16(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<uint16_t, double>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<uint16_t, double>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        double *toptr,
+        int64_t tooffset,
+        const uint16_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tofloat64_fromuint16(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<double, uint16_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<double, uint16_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
 
     template <>
     ERROR NumpyArray_fill<uint16_t, std::complex<float>>(
-      kernel::lib ptr_lib,
-      std::complex<float> *toptr,
-      int64_t tooffset,
-      const uint16_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_tocomplex64_fromuint16(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<uint16_t, std::complex<float>>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<uint16_t, std::complex<float>>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        std::complex<float> *toptr,
+        int64_t tooffset,
+        const uint16_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tocomplex64_fromuint16(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<std::complex<float>, uint16_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<std::complex<float>, uint16_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
 
 
     template <>
     ERROR NumpyArray_fill<uint16_t, std::complex<double>>(
-      kernel::lib ptr_lib,
-      std::complex<double> *toptr,
-      int64_t tooffset,
-      const uint16_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_tocomplex128_fromuint16(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<uint16_t, std::complex<double>>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<uint16_t, std::complex<double>>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        std::complex<double> *toptr,
+        int64_t tooffset,
+        const uint16_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tocomplex128_fromuint16(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<std::complex<double>, uint16_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<std::complex<double>, uint16_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
 
 
     template <>
     ERROR NumpyArray_fill<uint32_t, bool>(
-      kernel::lib ptr_lib,
-      bool *toptr,
-      int64_t tooffset,
-      const uint32_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_tobool_fromuint32(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<uint32_t, bool>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<uint32_t, bool>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        bool *toptr,
+        int64_t tooffset,
+        const uint32_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tobool_fromuint32(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<bool, uint32_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<bool, uint32_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<uint32_t, int8_t>(
-      kernel::lib ptr_lib,
-      int8_t *toptr,
-      int64_t tooffset,
-      const uint32_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_toint8_fromuint32(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<uint32_t, int8_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<uint32_t, int8_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        int8_t *toptr,
+        int64_t tooffset,
+        const uint32_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_toint8_fromuint32(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<int8_t, uint32_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<int8_t, uint32_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<uint32_t, int16_t>(
-      kernel::lib ptr_lib,
-      int16_t *toptr,
-      int64_t tooffset,
-      const uint32_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_toint16_fromuint32(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<uint32_t, int16_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<uint32_t, int16_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        int16_t *toptr,
+        int64_t tooffset,
+        const uint32_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_toint16_fromuint32(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<int16_t, uint32_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<int16_t, uint32_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<uint32_t, int32_t>(
-      kernel::lib ptr_lib,
-      int32_t *toptr,
-      int64_t tooffset,
-      const uint32_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_toint32_fromuint32(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<uint32_t, int32_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<uint32_t, int32_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        int32_t *toptr,
+        int64_t tooffset,
+        const uint32_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_toint32_fromuint32(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<int32_t, uint32_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<int32_t, uint32_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<uint32_t, int64_t>(
-      kernel::lib ptr_lib,
-      int64_t *toptr,
-      int64_t tooffset,
-      const uint32_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_toint64_fromuint32(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<uint32_t, int64_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<uint32_t, int64_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        int64_t *toptr,
+        int64_t tooffset,
+        const uint32_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_toint64_fromuint32(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<int64_t, uint32_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<int64_t, uint32_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<uint32_t, uint8_t>(
-      kernel::lib ptr_lib,
-      uint8_t *toptr,
-      int64_t tooffset,
-      const uint32_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_touint8_fromuint32(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<uint32_t, uint8_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<uint32_t, uint8_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        uint8_t *toptr,
+        int64_t tooffset,
+        const uint32_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_touint8_fromuint32(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<uint8_t, uint32_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<uint8_t, uint32_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<uint32_t, uint16_t>(
-      kernel::lib ptr_lib,
-      uint16_t *toptr,
-      int64_t tooffset,
-      const uint32_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_touint16_fromuint32(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<uint32_t, uint16_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<uint32_t, uint16_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        uint16_t *toptr,
+        int64_t tooffset,
+        const uint32_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_touint16_fromuint32(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<uint16_t, uint32_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<uint16_t, uint32_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<uint32_t, uint32_t>(
-      kernel::lib ptr_lib,
-      uint32_t *toptr,
-      int64_t tooffset,
-      const uint32_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_touint32_fromuint32(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<uint32_t, uint32_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<uint32_t, uint32_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        uint32_t *toptr,
+        int64_t tooffset,
+        const uint32_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_touint32_fromuint32(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<uint32_t, uint32_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<uint32_t, uint32_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<uint32_t, uint64_t>(
-      kernel::lib ptr_lib,
-      uint64_t *toptr,
-      int64_t tooffset,
-      const uint32_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_touint64_fromuint32(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<uint32_t, uint64_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<uint32_t, uint64_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        uint64_t *toptr,
+        int64_t tooffset,
+        const uint32_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_touint64_fromuint32(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<uint64_t, uint32_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<uint64_t, uint32_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<uint32_t, float>(
-      kernel::lib ptr_lib,
-      float *toptr,
-      int64_t tooffset,
-      const uint32_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_tofloat32_fromuint32(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<uint32_t, float>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<uint32_t, float>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        float *toptr,
+        int64_t tooffset,
+        const uint32_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tofloat32_fromuint32(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<float, uint32_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<float, uint32_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<uint32_t, double>(
-      kernel::lib ptr_lib,
-      double *toptr,
-      int64_t tooffset,
-      const uint32_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_tofloat64_fromuint32(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<uint32_t, double>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<uint32_t, double>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        double *toptr,
+        int64_t tooffset,
+        const uint32_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tofloat64_fromuint32(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<double, uint32_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<double, uint32_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
 
     template <>
     ERROR NumpyArray_fill<uint32_t, std::complex<float>>(
-      kernel::lib ptr_lib,
-      std::complex<float> *toptr,
-      int64_t tooffset,
-      const uint32_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_tocomplex64_fromuint32(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<uint32_t, std::complex<float>>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<uint32_t, std::complex<float>>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        std::complex<float> *toptr,
+        int64_t tooffset,
+        const uint32_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tocomplex64_fromuint32(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<std::complex<float>, uint32_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<std::complex<float>, uint32_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
 
 
     template <>
     ERROR NumpyArray_fill<uint32_t, std::complex<double>>(
-      kernel::lib ptr_lib,
-      std::complex<double> *toptr,
-      int64_t tooffset,
-      const uint32_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_tocomplex128_fromuint32(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<uint32_t, std::complex<double>>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<uint32_t, std::complex<double>>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        std::complex<double> *toptr,
+        int64_t tooffset,
+        const uint32_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tocomplex128_fromuint32(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<std::complex<double>, uint32_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<std::complex<double>, uint32_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
 
     template <>
     ERROR NumpyArray_fill<uint64_t, bool>(
-      kernel::lib ptr_lib,
-      bool *toptr,
-      int64_t tooffset,
-      const uint64_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_tobool_fromuint64(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<uint64_t, bool>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<uint64_t, bool>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        bool *toptr,
+        int64_t tooffset,
+        const uint64_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tobool_fromuint64(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<bool, uint64_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<bool, uint64_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<uint64_t, int8_t>(
-      kernel::lib ptr_lib,
-      int8_t *toptr,
-      int64_t tooffset,
-      const uint64_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_toint8_fromuint64(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<uint64_t, int8_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<uint64_t, int8_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        int8_t *toptr,
+        int64_t tooffset,
+        const uint64_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_toint8_fromuint64(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<int8_t, uint64_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<int8_t, uint64_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<uint64_t, int16_t>(
-      kernel::lib ptr_lib,
-      int16_t *toptr,
-      int64_t tooffset,
-      const uint64_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_toint16_fromuint64(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<uint64_t, int16_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<uint64_t, int16_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        int16_t *toptr,
+        int64_t tooffset,
+        const uint64_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_toint16_fromuint64(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<int16_t, uint64_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<int16_t, uint64_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<uint64_t, int32_t>(
-      kernel::lib ptr_lib,
-      int32_t *toptr,
-      int64_t tooffset,
-      const uint64_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_toint32_fromuint64(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<uint64_t, int32_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<uint64_t, int32_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        int32_t *toptr,
+        int64_t tooffset,
+        const uint64_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_toint32_fromuint64(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<int32_t, uint64_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<int32_t, uint64_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<uint64_t, int64_t>(
-      kernel::lib ptr_lib,
-      int64_t *toptr,
-      int64_t tooffset,
-      const uint64_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_toint64_fromuint64(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<uint64_t, int64_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<uint64_t, int64_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        int64_t *toptr,
+        int64_t tooffset,
+        const uint64_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_toint64_fromuint64(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<int64_t, uint64_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<int64_t, uint64_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<uint64_t, uint8_t>(
-      kernel::lib ptr_lib,
-      uint8_t *toptr,
-      int64_t tooffset,
-      const uint64_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_touint8_fromuint64(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<uint64_t, uint8_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<uint64_t, uint8_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        uint8_t *toptr,
+        int64_t tooffset,
+        const uint64_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_touint8_fromuint64(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<uint8_t, uint64_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<uint8_t, uint64_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<uint64_t, uint16_t>(
-      kernel::lib ptr_lib,
-      uint16_t *toptr,
-      int64_t tooffset,
-      const uint64_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_touint16_fromuint64(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<uint64_t, uint16_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<uint64_t, uint16_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        uint16_t *toptr,
+        int64_t tooffset,
+        const uint64_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_touint16_fromuint64(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<uint16_t, uint64_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<uint16_t, uint64_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<uint64_t, uint32_t>(
-      kernel::lib ptr_lib,
-      uint32_t *toptr,
-      int64_t tooffset,
-      const uint64_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_touint32_fromuint64(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<uint64_t, uint32_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<uint64_t, uint32_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        uint32_t *toptr,
+        int64_t tooffset,
+        const uint64_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_touint32_fromuint64(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<uint32_t, uint64_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<uint32_t, uint64_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<uint64_t, uint64_t>(
-      kernel::lib ptr_lib,
-      uint64_t *toptr,
-      int64_t tooffset,
-      const uint64_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_touint64_fromuint64(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<uint64_t, uint64_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<uint64_t, uint64_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        uint64_t *toptr,
+        int64_t tooffset,
+        const uint64_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_touint64_fromuint64(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<uint64_t, uint64_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<uint64_t, uint64_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<uint64_t, float>(
-      kernel::lib ptr_lib,
-      float *toptr,
-      int64_t tooffset,
-      const uint64_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_tofloat32_fromuint64(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<uint64_t, float>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<uint64_t, float>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        float *toptr,
+        int64_t tooffset,
+        const uint64_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tofloat32_fromuint64(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<float, uint64_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<float, uint64_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<uint64_t, double>(
-      kernel::lib ptr_lib,
-      double *toptr,
-      int64_t tooffset,
-      const uint64_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_tofloat64_fromuint64(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<uint64_t, double>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<uint64_t, double>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        double *toptr,
+        int64_t tooffset,
+        const uint64_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tofloat64_fromuint64(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<double, uint64_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<double, uint64_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
 
     template <>
     ERROR NumpyArray_fill<uint64_t, std::complex<float>>(
-      kernel::lib ptr_lib,
-      std::complex<float> *toptr,
-      int64_t tooffset,
-      const uint64_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_tocomplex64_fromuint64(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<uint64_t, std::complex<float>>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<uint64_t, std::complex<float>>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        std::complex<float> *toptr,
+        int64_t tooffset,
+        const uint64_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tocomplex64_fromuint64(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<std::complex<float>, uint64_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<std::complex<float>, uint64_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
 
 
-   template <>
+    template <>
     ERROR NumpyArray_fill<uint64_t, std::complex<double>>(
-      kernel::lib ptr_lib,
-      std::complex<double> *toptr,
-      int64_t tooffset,
-      const uint64_t *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_tocomplex128_fromuint64(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<uint64_t, std::complex<double>>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<uint64_t, std::complex<double>>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        std::complex<double> *toptr,
+        int64_t tooffset,
+        const uint64_t *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tocomplex128_fromuint64(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<std::complex<double>, uint64_t>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<std::complex<double>, uint64_t>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
 
     template <>
     ERROR NumpyArray_fill<float, bool>(
-      kernel::lib ptr_lib,
-      bool *toptr,
-      int64_t tooffset,
-      const float *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_tobool_fromfloat32(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<float, bool>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<float, bool>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        bool *toptr,
+        int64_t tooffset,
+        const float *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tobool_fromfloat32(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<bool, float>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<bool, float>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<float, int8_t>(
-      kernel::lib ptr_lib,
-      int8_t *toptr,
-      int64_t tooffset,
-      const float *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_toint8_fromfloat32(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<float, int8_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<float, int8_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        int8_t *toptr,
+        int64_t tooffset,
+        const float *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_toint8_fromfloat32(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<int8_t, float>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<int8_t, float>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<float, int16_t>(
-      kernel::lib ptr_lib,
-      int16_t *toptr,
-      int64_t tooffset,
-      const float *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_toint16_fromfloat32(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<float, int16_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<float, int16_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        int16_t *toptr,
+        int64_t tooffset,
+        const float *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_toint16_fromfloat32(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<int16_t, float>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<int16_t, float>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<float, int32_t>(
-      kernel::lib ptr_lib,
-      int32_t *toptr,
-      int64_t tooffset,
-      const float *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_toint32_fromfloat32(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<float, int32_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<float, int32_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        int32_t *toptr,
+        int64_t tooffset,
+        const float *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_toint32_fromfloat32(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<int32_t, float>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<int32_t, float>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<float, int64_t>(
-      kernel::lib ptr_lib,
-      int64_t *toptr,
-      int64_t tooffset,
-      const float *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_toint64_fromfloat32(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<float, int64_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<float, int64_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        int64_t *toptr,
+        int64_t tooffset,
+        const float *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_toint64_fromfloat32(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<int64_t, float>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<int64_t, float>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<float, uint8_t>(
-      kernel::lib ptr_lib,
-      uint8_t *toptr,
-      int64_t tooffset,
-      const float *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_touint8_fromfloat32(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<float, uint8_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<float, uint8_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        uint8_t *toptr,
+        int64_t tooffset,
+        const float *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_touint8_fromfloat32(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<uint8_t, float>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<uint8_t, float>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<float, uint16_t>(
-      kernel::lib ptr_lib,
-      uint16_t *toptr,
-      int64_t tooffset,
-      const float *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_touint16_fromfloat32(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<float, uint16_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<float, uint16_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        uint16_t *toptr,
+        int64_t tooffset,
+        const float *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_touint16_fromfloat32(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<uint16_t, float>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<uint16_t, float>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<float, uint32_t>(
-      kernel::lib ptr_lib,
-      uint32_t *toptr,
-      int64_t tooffset,
-      const float *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_touint32_fromfloat32(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<float, uint32_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<float, uint32_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        uint32_t *toptr,
+        int64_t tooffset,
+        const float *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_touint32_fromfloat32(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<uint32_t, float>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<uint32_t, float>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<float, uint64_t>(
-      kernel::lib ptr_lib,
-      uint64_t *toptr,
-      int64_t tooffset,
-      const float *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_touint64_fromfloat32(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<float, uint64_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<float, uint64_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        uint64_t *toptr,
+        int64_t tooffset,
+        const float *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_touint64_fromfloat32(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<uint64_t, float>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<uint64_t, float>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<float, float>(
-      kernel::lib ptr_lib,
-      float *toptr,
-      int64_t tooffset,
-      const float *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_tofloat32_fromfloat32(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<float, float>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<float, float>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        float *toptr,
+        int64_t tooffset,
+        const float *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tofloat32_fromfloat32(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<float, float>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<float, float>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<float, double>(
-      kernel::lib ptr_lib,
-      double *toptr,
-      int64_t tooffset,
-      const float *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_tofloat64_fromfloat32(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<float, double>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<float, double>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        double *toptr,
+        int64_t tooffset,
+        const float *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tofloat64_fromfloat32(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<double, float>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<double, float>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
 
     template <>
     ERROR NumpyArray_fill<float, std::complex<float>>(
-      kernel::lib ptr_lib,
-      std::complex<float> *toptr,
-      int64_t tooffset,
-      const float *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_tocomplex64_fromfloat32(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<float, std::complex<float>>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<float, std::complex<float>>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        std::complex<float> *toptr,
+        int64_t tooffset,
+        const float *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tocomplex64_fromfloat32(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<std::complex<float>, float>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<std::complex<float>, float>"
+                            + FILENAME(__LINE__)));
+        }
     }
 
 
     template <>
     ERROR NumpyArray_fill<float, std::complex<double>>(
-      kernel::lib ptr_lib,
-      std::complex<double> *toptr,
-      int64_t tooffset,
-      const float *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_tocomplex128_fromfloat32(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<float, std::complex<double>>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<float, std::complex<double>>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        std::complex<double> *toptr,
+        int64_t tooffset,
+        const float *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tocomplex128_fromfloat32(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<std::complex<double>, float>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<std::complex<double>, float>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
 
     template <>
     ERROR NumpyArray_fill<double, bool>(
-      kernel::lib ptr_lib,
-      bool *toptr,
-      int64_t tooffset,
-      const double *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_tobool_fromfloat64(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<double, bool>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<double, bool>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        bool *toptr,
+        int64_t tooffset,
+        const double *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tobool_fromfloat64(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<bool, double>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<bool, double>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<double, int8_t>(
-      kernel::lib ptr_lib,
-      int8_t *toptr,
-      int64_t tooffset,
-      const double *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_toint8_fromfloat64(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<double, int8_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<double, int8_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        int8_t *toptr,
+        int64_t tooffset,
+        const double *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_toint8_fromfloat64(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<int8_t, double>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<int8_t, double>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<double, int16_t>(
-      kernel::lib ptr_lib,
-      int16_t *toptr,
-      int64_t tooffset,
-      const double *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_toint16_fromfloat64(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<double, int16_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<double, int16_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        int16_t *toptr,
+        int64_t tooffset,
+        const double *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_toint16_fromfloat64(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<int16_t, double>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<int16_t, double>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<double, int32_t>(
-      kernel::lib ptr_lib,
-      int32_t *toptr,
-      int64_t tooffset,
-      const double *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_toint32_fromfloat64(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<double, int32_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<double, int32_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        int32_t *toptr,
+        int64_t tooffset,
+        const double *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_toint32_fromfloat64(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<int32_t, double>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<int32_t, double>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<double, int64_t>(
-      kernel::lib ptr_lib,
-      int64_t *toptr,
-      int64_t tooffset,
-      const double *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_toint64_fromfloat64(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<double, int64_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<double, int64_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        int64_t *toptr,
+        int64_t tooffset,
+        const double *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_toint64_fromfloat64(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<int64_t, double>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<int64_t, double>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<double, uint8_t>(
-      kernel::lib ptr_lib,
-      uint8_t *toptr,
-      int64_t tooffset,
-      const double *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_touint8_fromfloat64(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<double, uint8_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<double, uint8_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        uint8_t *toptr,
+        int64_t tooffset,
+        const double *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_touint8_fromfloat64(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<uint8_t, double>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<uint8_t, double>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<double, uint16_t>(
-      kernel::lib ptr_lib,
-      uint16_t *toptr,
-      int64_t tooffset,
-      const double *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_touint16_fromfloat64(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<double, uint16_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<double, uint16_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        uint16_t *toptr,
+        int64_t tooffset,
+        const double *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_touint16_fromfloat64(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<uint16_t, double>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<uint16_t, double>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<double, uint32_t>(
-      kernel::lib ptr_lib,
-      uint32_t *toptr,
-      int64_t tooffset,
-      const double *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_touint32_fromfloat64(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<double, uint32_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<double, uint32_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        uint32_t *toptr,
+        int64_t tooffset,
+        const double *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_touint32_fromfloat64(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<uint32_t, double>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<uint32_t, double>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<double, uint64_t>(
-      kernel::lib ptr_lib,
-      uint64_t *toptr,
-      int64_t tooffset,
-      const double *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_touint64_fromfloat64(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<double, uint64_t>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<double, uint64_t>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        uint64_t *toptr,
+        int64_t tooffset,
+        const double *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_touint64_fromfloat64(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<uint64_t, double>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<uint64_t, double>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<double, float>(
-      kernel::lib ptr_lib,
-      float *toptr,
-      int64_t tooffset,
-      const double *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_tofloat32_fromfloat64(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<double, float>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<double, float>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        float *toptr,
+        int64_t tooffset,
+        const double *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tofloat32_fromfloat64(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<float, double>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<float, double>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
+
     template <>
     ERROR NumpyArray_fill<double, double>(
-      kernel::lib ptr_lib,
-      double *toptr,
-      int64_t tooffset,
-      const double *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_tofloat64_fromfloat64(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<double, double>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<double, double>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        double *toptr,
+        int64_t tooffset,
+        const double *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tofloat64_fromfloat64(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<double, double>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<double, double>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
 
     template <>
     ERROR NumpyArray_fill<double, std::complex<float>>(
-      kernel::lib ptr_lib,
-      std::complex<float> *toptr,
-      int64_t tooffset,
-      const double *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_tocomplex64_fromfloat64(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<double, std::complex<float>>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<double, std::complex<float>>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        std::complex<float> *toptr,
+        int64_t tooffset,
+        const double *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tocomplex64_fromfloat64(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<std::complex<float>, double>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<std::complex<float>, double>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
 
     template <>
     ERROR NumpyArray_fill<double, std::complex<double>>(
-      kernel::lib ptr_lib,
-      std::complex<double> *toptr,
-      int64_t tooffset,
-      const double *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_tocomplex128_fromfloat64(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<double, std::complex<double>>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<double, std::complex<double>>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        std::complex<double> *toptr,
+        int64_t tooffset,
+        const double *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tocomplex128_fromfloat64(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<std::complex<double>, double>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<std::complex<double>, double>"
+                            + FILENAME(__LINE__)));
+        }
+    }
+
+
+    template <>
+    ERROR NumpyArray_fill<std::complex<float>, bool>(
+        kernel::lib ptr_lib,
+        bool *toptr,
+        int64_t tooffset,
+        const std::complex<float> *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tobool_fromcomplex64(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<bool, std::complex<float>>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<bool, std::complex<float>>"
+                            + FILENAME(__LINE__)));
+        }
+    }
+
+
+    template <>
+    ERROR NumpyArray_fill<std::complex<float>, int8_t>(
+        kernel::lib ptr_lib,
+        int8_t *toptr,
+        int64_t tooffset,
+        const std::complex<float> *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_toint8_fromcomplex64(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<int8_t, std::complex<float>>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<int8_t, std::complex<float>>"
+                            + FILENAME(__LINE__)));
+        }
+    }
+
+
+    template <>
+    ERROR NumpyArray_fill<std::complex<float>, int16_t>(
+        kernel::lib ptr_lib,
+        int16_t *toptr,
+        int64_t tooffset,
+        const std::complex<float> *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_toint16_fromcomplex64(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<int16_t, std::complex<float>>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<int16_t, std::complex<float>>"
+                            + FILENAME(__LINE__)));
+        }
+    }
+
+
+    template <>
+    ERROR NumpyArray_fill<std::complex<float>, int32_t>(
+        kernel::lib ptr_lib,
+        int32_t *toptr,
+        int64_t tooffset,
+        const std::complex<float> *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_toint32_fromcomplex64(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<int32_t, std::complex<float>>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<int32_t, std::complex<float>>"
+                            + FILENAME(__LINE__)));
+        }
+    }
+
+
+    template <>
+    ERROR NumpyArray_fill<std::complex<float>, int64_t>(
+        kernel::lib ptr_lib,
+        int64_t *toptr,
+        int64_t tooffset,
+        const std::complex<float> *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_toint64_fromcomplex64(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<int64_t, std::complex<float>>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<int64_t, std::complex<float>>"
+                            + FILENAME(__LINE__)));
+        }
+    }
+
+
+    template <>
+    ERROR NumpyArray_fill<std::complex<float>, uint8_t>(
+        kernel::lib ptr_lib,
+        uint8_t *toptr,
+        int64_t tooffset,
+        const std::complex<float> *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_touint8_fromcomplex64(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<uint8_t, std::complex<float>>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<uint8_t, std::complex<float>>"
+                            + FILENAME(__LINE__)));
+        }
+    }
+
+
+    template <>
+    ERROR NumpyArray_fill<std::complex<float>, uint16_t>(
+        kernel::lib ptr_lib,
+        uint16_t *toptr,
+        int64_t tooffset,
+        const std::complex<float> *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_touint16_fromcomplex64(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<uint16_t, std::complex<float>>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<uint16_t, std::complex<float>>"
+                            + FILENAME(__LINE__)));
+        }
+    }
+
+
+    template <>
+    ERROR NumpyArray_fill<std::complex<float>, uint32_t>(
+        kernel::lib ptr_lib,
+        uint32_t *toptr,
+        int64_t tooffset,
+        const std::complex<float> *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_touint32_fromcomplex64(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<uint32_t, std::complex<float>>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<uint32_t, std::complex<float>>"
+                            + FILENAME(__LINE__)));
+        }
+    }
+
+
+    template <>
+    ERROR NumpyArray_fill<std::complex<float>, uint64_t>(
+        kernel::lib ptr_lib,
+        uint64_t *toptr,
+        int64_t tooffset,
+        const std::complex<float> *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_touint64_fromcomplex64(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<uint64_t, std::complex<float>>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<uint64_t, std::complex<float>>"
+                            + FILENAME(__LINE__)));
+        }
+    }
+
+
+    template <>
+    ERROR NumpyArray_fill<std::complex<float>, float>(
+        kernel::lib ptr_lib,
+        float *toptr,
+        int64_t tooffset,
+        const std::complex<float> *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tofloat32_fromcomplex64(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<float, std::complex<float>>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<float, std::complex<float>>"
+                            + FILENAME(__LINE__)));
+        }
+    }
+
+
+    template <>
+    ERROR NumpyArray_fill<std::complex<float>, double>(
+        kernel::lib ptr_lib,
+        double *toptr,
+        int64_t tooffset,
+        const std::complex<float> *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tofloat64_fromcomplex64(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<double, std::complex<float>>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<double, std::complex<float>>"
+                            + FILENAME(__LINE__)));
+        }
+    }
+
+
+    template <>
+    ERROR NumpyArray_fill<std::complex<float>, std::complex<float>>(
+        kernel::lib ptr_lib,
+        std::complex<float> *toptr,
+        int64_t tooffset,
+        const std::complex<float> *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tocomplex64_fromcomplex64(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<std::complex<float>, std::complex<float>>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<std::complex<float>, std::complex<float>>"
+                            + FILENAME(__LINE__)));
+        }
+    }
+
+
+    template <>
+    ERROR NumpyArray_fill<std::complex<float>, std::complex<double>>(
+        kernel::lib ptr_lib,
+        std::complex<double> *toptr,
+        int64_t tooffset,
+        const std::complex<float> *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tocomplex128_fromcomplex64(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<std::complex<double>, std::complex<float>>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<std::complex<double>, std::complex<float>>"
+                            + FILENAME(__LINE__)));
+        }
+    }
+
+
+    template <>
+    ERROR NumpyArray_fill<std::complex<double>, bool>(
+        kernel::lib ptr_lib,
+        bool *toptr,
+        int64_t tooffset,
+        const std::complex<double> *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tobool_fromcomplex128(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<bool, std::complex<double>>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<bool, std::complex<double>>"
+                            + FILENAME(__LINE__)));
+        }
+    }
+
+
+    template <>
+    ERROR NumpyArray_fill<std::complex<double>, int8_t>(
+        kernel::lib ptr_lib,
+        int8_t *toptr,
+        int64_t tooffset,
+        const std::complex<double> *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_toint8_fromcomplex128(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<int8_t, std::complex<double>>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<int8_t, std::complex<double>>"
+                            + FILENAME(__LINE__)));
+        }
+    }
+
+
+    template <>
+    ERROR NumpyArray_fill<std::complex<double>, int16_t>(
+        kernel::lib ptr_lib,
+        int16_t *toptr,
+        int64_t tooffset,
+        const std::complex<double> *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_toint16_fromcomplex128(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<int16_t, std::complex<double>>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<int16_t, std::complex<double>>"
+                            + FILENAME(__LINE__)));
+        }
+    }
+
+
+    template <>
+    ERROR NumpyArray_fill<std::complex<double>, int32_t>(
+        kernel::lib ptr_lib,
+        int32_t *toptr,
+        int64_t tooffset,
+        const std::complex<double> *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_toint32_fromcomplex128(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<int32_t, std::complex<double>>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<int32_t, std::complex<double>>"
+                            + FILENAME(__LINE__)));
+        }
+    }
+
+
+    template <>
+    ERROR NumpyArray_fill<std::complex<double>, int64_t>(
+        kernel::lib ptr_lib,
+        int64_t *toptr,
+        int64_t tooffset,
+        const std::complex<double> *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_toint64_fromcomplex128(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<int64_t, std::complex<double>>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<int64_t, std::complex<double>>"
+                            + FILENAME(__LINE__)));
+        }
+    }
+
+
+    template <>
+    ERROR NumpyArray_fill<std::complex<double>, uint8_t>(
+        kernel::lib ptr_lib,
+        uint8_t *toptr,
+        int64_t tooffset,
+        const std::complex<double> *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_touint8_fromcomplex128(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<uint8_t, std::complex<double>>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<uint8_t, std::complex<double>>"
+                            + FILENAME(__LINE__)));
+        }
+    }
+
+
+    template <>
+    ERROR NumpyArray_fill<std::complex<double>, uint16_t>(
+        kernel::lib ptr_lib,
+        uint16_t *toptr,
+        int64_t tooffset,
+        const std::complex<double> *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_touint16_fromcomplex128(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<uint16_t, std::complex<double>>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<uint16_t, std::complex<double>>"
+                            + FILENAME(__LINE__)));
+        }
+    }
+
+
+    template <>
+    ERROR NumpyArray_fill<std::complex<double>, uint32_t>(
+        kernel::lib ptr_lib,
+        uint32_t *toptr,
+        int64_t tooffset,
+        const std::complex<double> *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_touint32_fromcomplex128(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<uint32_t, std::complex<double>>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<uint32_t, std::complex<double>>"
+                            + FILENAME(__LINE__)));
+        }
+    }
+
+
+    template <>
+    ERROR NumpyArray_fill<std::complex<double>, uint64_t>(
+        kernel::lib ptr_lib,
+        uint64_t *toptr,
+        int64_t tooffset,
+        const std::complex<double> *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_touint64_fromcomplex128(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<uint64_t, std::complex<double>>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<uint64_t, std::complex<double>>"
+                            + FILENAME(__LINE__)));
+        }
+    }
+
+
+    template <>
+    ERROR NumpyArray_fill<std::complex<double>, float>(
+        kernel::lib ptr_lib,
+        float *toptr,
+        int64_t tooffset,
+        const std::complex<double> *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tofloat32_fromcomplex128(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<float, std::complex<double>>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<float, std::complex<double>>"
+                            + FILENAME(__LINE__)));
+        }
     }
 
 
     template <>
     ERROR NumpyArray_fill<std::complex<double>, double>(
-      kernel::lib ptr_lib,
-      double *toptr,
-      int64_t tooffset,
-      const std::complex<double> *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_tofloat64_fromcomplex128(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<std::complex<double>, double>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<std::complex<double>, double>")
-          + FILENAME(__LINE__));
-      }
-    }
-
-    template <>
-    ERROR NumpyArray_fill<std::complex<float>, std::complex<float>>(
-      kernel::lib ptr_lib,
-      std::complex<float> *toptr,
-      int64_t tooffset,
-      const std::complex<float> *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_tocomplex64_fromcomplex64(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<std::complex<float>, std::complex<float>>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<std::complex<float>, std::complex<float>>")
-          + FILENAME(__LINE__));
-      }
-    }
-
-    template <>
-    ERROR NumpyArray_fill<std::complex<float>, std::complex<double>>(
-      kernel::lib ptr_lib,
-      std::complex<double> *toptr,
-      int64_t tooffset,
-      const std::complex<float> *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_tocomplex128_fromcomplex64(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<std::complex<float>, std::complex<float>>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<std::complex<float>, std::complex<float>>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        double *toptr,
+        int64_t tooffset,
+        const std::complex<double> *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tofloat64_fromcomplex128(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<double, std::complex<double>>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<double, std::complex<double>>"
+                            + FILENAME(__LINE__)));
+        }
     }
 
 
     template <>
     ERROR NumpyArray_fill<std::complex<double>, std::complex<float>>(
-      kernel::lib ptr_lib,
-      std::complex<float> *toptr,
-      int64_t tooffset,
-      const std::complex<double> *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_tocomplex64_fromcomplex128(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<std::complex<double>, std::complex<float>>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<std::complex<double>, std::complex<float>>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        std::complex<float> *toptr,
+        int64_t tooffset,
+        const std::complex<double> *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tocomplex64_fromcomplex128(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<std::complex<float>, std::complex<double>>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<std::complex<float>, std::complex<double>>"
+                            + FILENAME(__LINE__)));
+        }
     }
+
 
     template <>
     ERROR NumpyArray_fill<std::complex<double>, std::complex<double>>(
-      kernel::lib ptr_lib,
-      std::complex<double> *toptr,
-      int64_t tooffset,
-      const std::complex<double> *fromptr,
-      int64_t length) {
-      if (ptr_lib == kernel::lib::cpu) {
-        return awkward_NumpyArray_fill_tocomplex128_fromcomplex128(
-          toptr,
-          tooffset,
-          fromptr,
-          length);
-      }
-      else if (ptr_lib == kernel::lib::cuda) {
-        throw std::runtime_error(
-          std::string("not implemented: ptr_lib == cuda_kernels for NumpyArray_fill<std::complex<double>, std::complex<double>>")
-          + FILENAME(__LINE__));
-      }
-      else {
-        throw std::runtime_error(
-          std::string("unrecognized ptr_lib for NumpyArray_fill<std::complex<double>, std::complex<double>>")
-          + FILENAME(__LINE__));
-      }
+        kernel::lib ptr_lib,
+        std::complex<double> *toptr,
+        int64_t tooffset,
+        const std::complex<double> *fromptr,
+        int64_t length) {
+        if (ptr_lib == kernel::lib::cpu) {
+            return awkward_NumpyArray_fill_tocomplex128_fromcomplex128(
+                toptr,
+                tooffset,
+                fromptr,
+                length);
+        }
+        else if (ptr_lib == kernel::lib::cuda) {
+            throw std::runtime_error(
+                std::string("not implemented: ptr_lib == cuda_kernels "
+                            "for NumpyArray_fill<std::complex<double>, std::complex<double>>"
+                            + FILENAME(__LINE__)));
+        }
+        else {
+            throw std::runtime_error(
+                std::string("unrecognized ptr_lib "
+                            "for NumpyArray_fill<std::complex<double>, std::complex<double>>"
+                            + FILENAME(__LINE__)));
+        }
     }
-
 
 
 
